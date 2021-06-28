@@ -22,7 +22,43 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="aacb0227-9735-4d78-81e7-7574c80d96e2" name="Default Changelist" comment="" />
+    <list default="true" id="aacb0227-9735-4d78-81e7-7574c80d96e2" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/unit-2/sprint-1/day-5-Layouts/we/Simple Layout/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/unit-2/sprint-1/day-5-Layouts/we/Simple Layout/app/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/unit-2/sprint-1/day-5-Layouts/we/Simple Layout/app/build.gradle" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/unit-2/sprint-1/day-5-Layouts/we/Simple Layout/app/proguard-rules.pro" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/unit-2/sprint-1/day-5-Layouts/we/Simple Layout/app/src/androidTest/java/com/example/simple/ExampleInstrumentedTest.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/unit-2/sprint-1/day-5-Layouts/we/Simple Layout/app/src/main/AndroidManifest.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/unit-2/sprint-1/day-5-Layouts/we/Simple Layout/app/src/main/java/com/example/simple/MainActivity.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/unit-2/sprint-1/day-5-Layouts/we/Simple Layout/app/src/main/res/drawable-v24/ic_launcher_foreground.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/unit-2/sprint-1/day-5-Layouts/we/Simple Layout/app/src/main/res/drawable/ic_launcher_background.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/unit-2/sprint-1/day-5-Layouts/we/Simple Layout/app/src/main/res/layout/activity_main.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/unit-2/sprint-1/day-5-Layouts/we/Simple Layout/app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/unit-2/sprint-1/day-5-Layouts/we/Simple Layout/app/src/main/res/mipmap-anydpi-v26/ic_launcher_round.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/unit-2/sprint-1/day-5-Layouts/we/Simple Layout/app/src/main/res/mipmap-hdpi/ic_launcher.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/unit-2/sprint-1/day-5-Layouts/we/Simple Layout/app/src/main/res/mipmap-hdpi/ic_launcher_round.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/unit-2/sprint-1/day-5-Layouts/we/Simple Layout/app/src/main/res/mipmap-mdpi/ic_launcher.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/unit-2/sprint-1/day-5-Layouts/we/Simple Layout/app/src/main/res/mipmap-mdpi/ic_launcher_round.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/unit-2/sprint-1/day-5-Layouts/we/Simple Layout/app/src/main/res/mipmap-xhdpi/ic_launcher.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/unit-2/sprint-1/day-5-Layouts/we/Simple Layout/app/src/main/res/mipmap-xhdpi/ic_launcher_round.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/unit-2/sprint-1/day-5-Layouts/we/Simple Layout/app/src/main/res/mipmap-xxhdpi/ic_launcher.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/unit-2/sprint-1/day-5-Layouts/we/Simple Layout/app/src/main/res/mipmap-xxhdpi/ic_launcher_round.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/unit-2/sprint-1/day-5-Layouts/we/Simple Layout/app/src/main/res/mipmap-xxxhdpi/ic_launcher.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/unit-2/sprint-1/day-5-Layouts/we/Simple Layout/app/src/main/res/mipmap-xxxhdpi/ic_launcher_round.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/unit-2/sprint-1/day-5-Layouts/we/Simple Layout/app/src/main/res/values-night/themes.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/unit-2/sprint-1/day-5-Layouts/we/Simple Layout/app/src/main/res/values/colors.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/unit-2/sprint-1/day-5-Layouts/we/Simple Layout/app/src/main/res/values/strings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/unit-2/sprint-1/day-5-Layouts/we/Simple Layout/app/src/main/res/values/themes.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/unit-2/sprint-1/day-5-Layouts/we/Simple Layout/app/src/test/java/com/example/simple/ExampleUnitTest.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/unit-2/sprint-1/day-5-Layouts/we/Simple Layout/build.gradle" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/unit-2/sprint-1/day-5-Layouts/we/Simple Layout/gradle.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/unit-2/sprint-1/day-5-Layouts/we/Simple Layout/gradle/wrapper/gradle-wrapper.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/unit-2/sprint-1/day-5-Layouts/we/Simple Layout/gradle/wrapper/gradle-wrapper.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/unit-2/sprint-1/day-5-Layouts/we/Simple Layout/gradlew" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/unit-2/sprint-1/day-5-Layouts/we/Simple Layout/gradlew.bat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/unit-2/sprint-1/day-5-Layouts/we/Simple Layout/settings.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -64,9 +100,13 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="549" y="186" key="FileChooserDialogImpl" timestamp="1624715945098">
+    <state x="549" y="186" key="FileChooserDialogImpl" timestamp="1624920985451">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
-    <state x="549" y="186" key="FileChooserDialogImpl/0.0.1536.864@0.0.1536.864" timestamp="1624715945098" />
+    <state x="549" y="186" key="FileChooserDialogImpl/0.0.1536.864@0.0.1536.864" timestamp="1624920985451" />
+    <state x="431" y="185" key="search.everywhere.popup" timestamp="1624921288445">
+      <screen x="0" y="0" width="1536" height="864" />
+    </state>
+    <state x="431" y="185" key="search.everywhere.popup/0.0.1536.864@0.0.1536.864" timestamp="1624921288445" />
   </component>
 </project>
