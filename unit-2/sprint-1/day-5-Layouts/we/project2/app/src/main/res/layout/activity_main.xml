@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="#2F2F2F"
+    android:orientation="vertical"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/tvSpartans"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Hello Spartans"
+        android:textColor="#FFFFFF"
+        android:textSize="22dp"
+        android:textStyle="bold"
+        android:layout_marginTop="25dp"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:id="@+id/tvWelcomeToLayouts"
+        android:layout_width="wrap_content"
+        android:text="Welcome To Layouts"
+        android:layout_below="@+id/tvSpartans"
+        android:textColor="#FFFFFF"
+        android:textSize="22dp"
+        android:textStyle="bold"
+        android:layout_marginTop="25dp"
+        android:layout_centerHorizontal="true"
+        android:layout_height="wrap_content"/>
+
+    <view
+        android:id="@+id/circle"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_below="@+id/tvWelcomeToLayouts"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="70dp"
+        android:background="@drawable/circle_bg"
+        />
+
+    <TextView
+        android:id="@+id/tvName"
+        android:layout_width="wrap_content"
+        android:textColor="#FF0000"
+        android:text="Name :"
+        android:layout_marginStart="20dp"
+        android:textSize="24sp"
+        android:layout_centerVertical="true"
+        android:layout_height="wrap_content"/>
+
+    <TextView
+        android:id="@+id/tvLloyd"
+        android:layout_width="wrap_content"
+        android:textColor="#FF0000"
+        android:text="Lloyd Dcosta"
+        android:layout_toEndOf="@+id/tvName"
+        android:drawableEnd="@drawable/ic_name_1"
+        android:drawablePadding="10dp"
+        android:layout_marginStart="20dp"
+        android:textSize="24sp"
+        android:layout_centerVertical="true"
+        android:layout_height="wrap_content"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:textColor="#FF0000"
+        android:text="Age :"
+        android:layout_below="@+id/tvName"
+        android:layout_marginStart="20dp"
+        android:textSize="24sp"
+        android:layout_centerVertical="true"
+        android:layout_height="wrap_content"/>
+
+    <TextView
+
+        android:layout_width="wrap_content"
+        android:textColor="#FF0000"
+        android:text="50"
+        android:layout_below="@+id/tvLloyd"
+        android:layout_toEndOf="@+id/tvName"
+        android:layout_marginStart="20dp"
+        android:textSize="24sp"
+        android:layout_centerVertical="true"
+        android:layout_height="wrap_content"/>
+
+    <view
+        android:id="@+id/viewthree"
+        android:layout_width="150dp"
+        android:layout_height="20dp"
+        android:layout_alignParentEnd="true"
+        android:layout_marginBottom="50dp"
+        android:layout_marginEnd="80dp"
+        android:background="@drawable/ic_rectangle_4"
+        android:layout_above="@+id/btnNext"
+        />
+
+    <view
+        android:id="@+id/viewtwo"
+        android:layout_width="200dp"
+        android:layout_height="40dp"
+        android:layout_above = "@+id/viewthree"
+        android:layout_alignParentEnd="true"
+        android:layout_marginBottom="20dp"
+        android:layout_marginEnd="40dp"
+        android:background="@drawable/ic_rectangle_4"
+        />
+
+    <view
+
+        android:layout_width="250dp"
+        android:layout_height="55dp"
+        android:layout_above = "@+id/viewtwo"
+        android:layout_alignParentEnd="true"
+        android:layout_marginBottom="15dp"
+        android:layout_marginEnd="30dp"
+        android:background="@drawable/ic_rectangle_4"
+
+        />
+
+    <Button
+        android:id="@+id/btnNext"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="#00ff00"
+        android:padding="22dp"
+        android:text="Next"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        />
+
+
+</RelativeLayout>
