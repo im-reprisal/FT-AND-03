@@ -1,0 +1,7 @@
+<resources>
+    <string name="text_choose_goal">Choose a daily goal</string>
+    <string name="text_casual">Casual</string>
+    <string name="text_steady">Steady</string>
+    <string name="text_13">13</string>
+    <string name="text_25">25</string>
+</resources>
