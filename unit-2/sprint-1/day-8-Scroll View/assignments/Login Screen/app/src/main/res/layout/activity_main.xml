@@ -9,7 +9,7 @@
    <LinearLayout
        android:id="@+id/tvLogin"
        android:layout_width="411dp"
-       android:layout_height="60dp"
+       android:layout_height="50dp"
        android:orientation="horizontal"
        android:background="#0583EA">
       <ImageButton
@@ -18,11 +18,11 @@
          android:src="@drawable/ic_vector"
           android:background="#0583EA"
           android:layout_margin="23dp"
-          android:contentDescription="@string/todo" />
+          android:contentDescription="@string/todo"/>
       <TextView
           android:layout_width="wrap_content"
           android:layout_height="wrap_content"
-          android:layout_marginTop="18dp"
+          android:layout_marginTop="14dp"
           android:layout_marginStart="77dp"
           android:textSize="22sp"
           android:textColor="@color/white"
@@ -38,7 +38,7 @@
    <com.google.android.material.textfield.TextInputLayout
        android:layout_width="match_parent"
        android:focusable="true"
-       android:layout_marginTop="80dp"
+       android:layout_marginTop="20dp"
        android:focusableInTouchMode="true"
        android:layout_height="wrap_content">
 
@@ -48,12 +48,12 @@
           android:ems="10"
           android:background="@color/white"
           android:inputType="text"
-          android:hint="Email" />
+          android:text="alam.lason@example.com"/>
    </com.google.android.material.textfield.TextInputLayout>
       <com.google.android.material.textfield.TextInputLayout
           android:layout_width="match_parent"
           android:focusable="true"
-          android:layout_marginTop="40dp"
+          android:layout_marginTop="15dp"
           android:focusableInTouchMode="true"
           android:layout_height="wrap_content">
 
@@ -63,40 +63,49 @@
              android:ems="10"
              android:background="@color/white"
              android:inputType="text"
-             android:hint="Password ( minimum 6 character )" />
+             android:hint="Password ( minimum 6 character )"/>
       </com.google.android.material.textfield.TextInputLayout>
       <EditText
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:ems="10"
+          android:layout_marginTop="15dp"
+          android:background="@color/white"
+          android:inputType="text"
+          android:text="Jane Cooper"/>
+      <TextView
           android:id="@+id/editTextPhone"
           android:layout_width="wrap_content"
           android:layout_height="wrap_content"
-          android:ems="10"
-          android:layout_marginStart="40dp"
+          android:textColor="#0583EA"
+          android:textSize="18sp"
+          android:layout_marginStart="60dp"
           android:layout_marginTop="25dp"
-          android:hint="   USE PHONE NUMBER"
-          android:inputType="phone" />
+          android:text="USE PHONE NUMBER"/>
       <Button
-          android:id="@+id/button"
-          android:layout_width="339dp"
-          android:background="#858992"
-          android:layout_marginTop="25dp"
+          android:layout_width="340dp"
+          android:background="#0583EA"
+          android:layout_marginTop="30dp"
           android:layout_height="51dp"
-          android:text="Login" />
+          android:text="Continue with facebook"/>
       <TextView
-          android:id="@+id/textView2"
+          android:id="@+id/button"
           android:layout_width="wrap_content"
-          android:textSize="20dp"
-          android:layout_marginStart="80dp"
-          android:layout_marginTop="20dp"
+          android:textSize="25sp"
+          android:textAllCaps="false"
+          android:layout_gravity="center"
+          android:layout_marginTop="15dp"
+          android:textColor="@color/black"
           android:layout_height="wrap_content"
-          android:text="Forget Password ?" />
+          android:text="or"/>
       <Button
           android:id="@+id/button2"
           android:layout_width="340dp"
           android:background="#3B5998"
-          android:layout_marginTop="50dp"
+          android:layout_marginTop="20dp"
           android:drawableStart="@drawable/ic_ion_logo_facebook"
           android:layout_height="51dp"
-          android:text="Continue with facebook" />
+          android:text="Continue with facebook"/>
       <Button
           android:id="@+id/button3"
           android:layout_width="340dp"
@@ -104,7 +113,7 @@
           android:background="@color/white"
           android:drawableStart="@drawable/ic_flat_color_icons_google"
           android:layout_height="51dp"
-          android:text="Continue with google" />
+          android:text="Continue with google"/>
    </LinearLayout>
 
 </RelativeLayout>
