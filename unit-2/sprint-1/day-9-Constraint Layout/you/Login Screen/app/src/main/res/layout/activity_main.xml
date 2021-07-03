@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+   <LinearLayout
+       android:id="@+id/tvLogin"
+       android:layout_width="411dp"
+       android:layout_height="60dp"
+       android:orientation="horizontal"
+       android:background="#0583EA">
+      <ImageButton
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+         android:src="@drawable/ic_vector"
+          android:background="#0583EA"
+          android:layout_margin="23dp"
+          android:contentDescription="@string/todo" />
+      <TextView
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_marginTop="18dp"
+          android:layout_marginStart="77dp"
+          android:textSize="22sp"
+          android:textColor="@color/white"
+          android:text="@string/login"/>
+   </LinearLayout>
+
+   <LinearLayout
+       android:layout_below="@+id/tvLogin"
+       android:layout_width="match_parent"
+       android:padding="30dp"
+       android:orientation="vertical"
+       android:layout_height="wrap_content">
+   <com.google.android.material.textfield.TextInputLayout
+       android:layout_width="match_parent"
+       android:focusable="true"
+       android:layout_marginTop="80dp"
+       android:focusableInTouchMode="true"
+       android:layout_height="wrap_content">
+
+      <EditText
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:ems="10"
+          android:background="@color/white"
+          android:inputType="text"
+          android:hint="Email" />
+   </com.google.android.material.textfield.TextInputLayout>
+      <com.google.android.material.textfield.TextInputLayout
+          android:layout_width="match_parent"
+          android:focusable="true"
+          android:layout_marginTop="40dp"
+          android:focusableInTouchMode="true"
+          android:layout_height="wrap_content">
+
+         <EditText
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+             android:ems="10"
+             android:background="@color/white"
+             android:inputType="text"
+             android:hint="Password ( minimum 6 character )" />
+      </com.google.android.material.textfield.TextInputLayout>
+      <EditText
+          android:id="@+id/editTextPhone"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:ems="10"
+          android:layout_marginStart="40dp"
+          android:layout_marginTop="25dp"
+          android:hint="   USE PHONE NUMBER"
+          android:inputType="phone" />
+      <Button
+          android:id="@+id/button"
+          android:layout_width="339dp"
+          android:background="#858992"
+          android:layout_marginTop="25dp"
+          android:layout_height="51dp"
+          android:text="Login" />
+      <TextView
+          android:id="@+id/textView2"
+          android:layout_width="wrap_content"
+          android:textSize="20dp"
+          android:layout_marginStart="80dp"
+          android:layout_marginTop="20dp"
+          android:layout_height="wrap_content"
+          android:text="Forget Password ?" />
+      <Button
+          android:id="@+id/button2"
+          android:layout_width="340dp"
+          android:background="#3B5998"
+          android:layout_marginTop="50dp"
+          android:drawableStart="@drawable/ic_ion_logo_facebook"
+          android:layout_height="51dp"
+          android:text="Continue with facebook" />
+      <Button
+          android:id="@+id/button3"
+          android:layout_width="340dp"
+          android:layout_marginTop="10dp"
+          android:background="@color/white"
+          android:drawableStart="@drawable/ic_flat_color_icons_google"
+          android:layout_height="51dp"
+          android:text="Continue with google" />
+   </LinearLayout>
+
+</RelativeLayout>
