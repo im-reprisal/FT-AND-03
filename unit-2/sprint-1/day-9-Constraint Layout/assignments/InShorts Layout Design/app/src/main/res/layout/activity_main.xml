@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+    <LinearLayout
+        android:id="@+id/tvLogin"
+        android:layout_width="411dp"
+        android:layout_height="50dp"
+        android:background="#0583EA">
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_back"
+            android:background="#0583EA"
+            android:layout_margin="23dp" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="14dp"
+            android:layout_marginStart="50dp"
+            android:textSize="22sp"
+            android:textColor="@color/white"
+            android:text="Smoking"/>
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_home"
+            android:layout_gravity="center_vertical"
+            android:layout_marginStart="125dp"
+            android:background="#0583EA"/>
+    </LinearLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="180dp">
+    <ImageView
+        android:id="@+id/tvImage"
+        android:layout_width="match_parent"
+        android:layout_height="180dp"
+        android:scaleType="centerCrop"
+        android:layout_margin="8dp"
+        android:src="@drawable/cigarette_buts"/>
+        <Button
+            android:layout_width="30dp"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+
+            android:layout_height="30dp"
+            android:background="@drawable/ic_share_button"/>
+    </RelativeLayout>
+</androidx.appcompat.widget.LinearLayoutCompat>

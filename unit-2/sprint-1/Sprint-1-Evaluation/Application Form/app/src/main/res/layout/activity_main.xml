@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="#BC1C2B"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+    <TextView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="WELCOME"
+    android:textColor="@color/white"
+    android:textSize="28sp"
+    android:layout_gravity="center_horizontal"
+    android:layout_marginTop="30dp"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Masai school is a 21st century coding school that cares about you!"
+        android:textSize="18sp"
+        android:textColor="@color/white"
+        android:layout_margin="28dp"/>
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/masai_homepage"
+        android:layout_marginTop="20dp"
+        android:layout_gravity="center_horizontal"/>
+    <Button
+        android:id="@+id/btnSignIn"
+        android:layout_width="match_parent"
+        android:textAllCaps="false"
+        android:backgroundTint="@color/white"
+        android:textColor="#BC1C2B"
+        android:text="Sign In"
+        android:layout_marginStart="20dp"
+        android:padding="10dp"
+        android:textSize="16sp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginTop="70dp"
+        android:layout_height="wrap_content"/>
+    <Button
+        android:id="@+id/btnCreateAccount"
+        android:layout_width="match_parent"
+        android:textAllCaps="false"
+        android:backgroundTint="@color/black"
+        android:textColor="@color/white"
+        android:text="Create an account"
+        android:layout_marginStart="20dp"
+        android:padding="10dp"
+        android:textSize="16sp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginTop="10dp"
+        android:layout_height="wrap_content"/>
+
+</LinearLayout>
