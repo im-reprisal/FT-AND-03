@@ -25,7 +25,10 @@ public class MainActivity extends AppCompatActivity  {
     private void buildList() {
         studentList = new ArrayList<>();
         for (int i = 0; i < 15; i++) {
-            studentList.add(new Student("Nishant", 24, ""+i));
+            if (i % 2 == 0)
+            studentList.add(new Student("Nishant", 24, ""+(i+1)));
+            if (i % 2 == 1)
+                studentList.add(new Student("Rishab", 24, ""+(i+1)));
          }
     }
     private void setRecyclerView(){

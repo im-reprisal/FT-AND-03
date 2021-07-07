@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_margin="25dp"
+    android:elevation="10dp"
+    android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:id="@+id/clkItem"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/tvName"
+            android:layout_width="wrap_content"
+            android:layout_toRightOf="@+id/ivPic"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            android:textSize="25sp"
+            android:text="Microsoft"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:id="@+id/tvAge"
+            android:layout_width="wrap_content"
+            android:layout_toRightOf="@+id/ivPic"
+            android:layout_marginTop="55dp"
+            android:textColor="@color/black"
+            android:layout_marginStart="20dp"
+            android:textSize="20sp"
+            android:text="Age : 64"
+            android:layout_height="wrap_content"/>
+        <TextView
+            android:id="@+id/tvWork"
+            android:layout_width="wrap_content"
+            android:layout_toRightOf="@+id/ivPic"
+            android:layout_marginTop="85dp"
+            android:textColor="@color/black"
+            android:layout_marginStart="20dp"
+            android:textSize="20sp"
+            android:text="Profession:Business"
+            android:layout_height="wrap_content"/>
+        <ImageView
+            android:id="@+id/ivPic"
+            android:layout_width="140dp"
+            android:layout_marginTop="35dp"
+            android:layout_height="130dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/bill_gates"/>
+
+    </RelativeLayout>
+
+</androidx.cardview.widget.CardView>

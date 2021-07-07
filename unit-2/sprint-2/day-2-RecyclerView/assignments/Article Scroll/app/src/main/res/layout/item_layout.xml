@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_margin="25dp"
+    android:elevation="10dp"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:id="@+id/clkItem"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/ivPic"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/th_1"
+           />
+        <TextView
+            android:id="@+id/tvTitle"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="25dp"
+            android:textSize="30sp"
+            android:layout_below="@+id/ivPic"
+            android:textColor="@color/black"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:text="Blue Ocean Wave Crashed" />
+
+        <TextView
+            android:id="@+id/tvArticle"
+            android:layout_below="@+id/tvTitle"
+            android:layout_margin="15dp"
+            android:layout_centerHorizontal="true"
+            android:textSize="18sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="As waves crashed against the shoreline in Encinitas on Monday, a bright blue hue overtook the ocean thanks to the return of an unpredictable natural phenomenon.The bright blue light, created by phytoplankton through a process called bioluminescence, can only be spotted from the shoreline on rare occasions and is not yet entirely understood by scientists, according to the Scripps Institution of Oceanography. " />
+        <TextView
+            android:id="@+id/tvAuthor"
+            android:layout_below="@+id/tvArticle"
+            android:layout_marginStart="250dp"
+            android:textSize="20dp"
+            android:layout_marginTop="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:text="Mark" />
+
+    </RelativeLayout>
+
+</androidx.cardview.widget.CardView>
