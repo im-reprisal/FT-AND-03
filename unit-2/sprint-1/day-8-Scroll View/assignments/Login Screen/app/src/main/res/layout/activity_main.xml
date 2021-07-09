@@ -23,10 +23,10 @@
           android:layout_width="wrap_content"
           android:layout_height="wrap_content"
           android:layout_marginTop="14dp"
-          android:layout_marginStart="77dp"
+          android:layout_marginStart="30dp"
           android:textSize="22sp"
           android:textColor="@color/white"
-          android:text="@string/login"/>
+          android:text="Create Account"/>
    </LinearLayout>
 
    <LinearLayout
@@ -83,11 +83,12 @@
           android:layout_marginTop="25dp"
           android:text="USE PHONE NUMBER"/>
       <Button
-          android:layout_width="340dp"
+          android:layout_width="300dp"
           android:background="#0583EA"
           android:layout_marginTop="30dp"
+          android:textAllCaps="false"
           android:layout_height="51dp"
-          android:text="Continue with facebook"/>
+          android:text="Sign Up"/>
       <TextView
           android:id="@+id/button"
           android:layout_width="wrap_content"
@@ -100,7 +101,7 @@
           android:text="or"/>
       <Button
           android:id="@+id/button2"
-          android:layout_width="340dp"
+          android:layout_width="300dp"
           android:background="#3B5998"
           android:layout_marginTop="20dp"
           android:drawableStart="@drawable/ic_ion_logo_facebook"
@@ -108,7 +109,7 @@
           android:text="Continue with facebook"/>
       <Button
           android:id="@+id/button3"
-          android:layout_width="340dp"
+          android:layout_width="300dp"
           android:layout_marginTop="10dp"
           android:background="@color/white"
           android:drawableStart="@drawable/ic_flat_color_icons_google"
