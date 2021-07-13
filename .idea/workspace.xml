@@ -23,7 +23,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="aacb0227-9735-4d78-81e7-7574c80d96e2" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/FT-AND-03.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/FT-AND-03.iml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -40,7 +40,7 @@
   </component>
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/unit-2/sprint-1/day1-1_Activity and LifeCycle/we/one activity lifecycle" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/unit-2/sprint-2/day-1-Permissions/we/Permission" />
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -66,10 +66,10 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="549" y="186" key="FileChooserDialogImpl" timestamp="1624977957002">
+    <state x="549" y="186" key="FileChooserDialogImpl" timestamp="1626173349683">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
-    <state x="549" y="186" key="FileChooserDialogImpl/0.0.1536.864@0.0.1536.864" timestamp="1624977957002" />
+    <state x="549" y="186" key="FileChooserDialogImpl/0.0.1536.864@0.0.1536.864" timestamp="1626173349683" />
     <state x="431" y="185" key="search.everywhere.popup" timestamp="1624921288445">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
