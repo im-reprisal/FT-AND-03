@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <EditText
+        android:id="@+id/etAddress"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:hint="Enter the to address"
+        android:padding="15dp" />
+
+    <EditText
+        android:id="@+id/etCc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/etAddress"
+        android:layout_gravity="center"
+        android:layout_marginTop="30dp"
+        android:hint="Enter the Cc "
+        android:padding="15dp" />
+
+    <EditText
+        android:id="@+id/etMessage"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:layout_below="@+id/etCc"
+        android:layout_gravity="center"
+        android:layout_marginTop="40dp"
+        android:hint="Enter the Message "
+         />
+
+
+    <Button
+        android:id="@+id/btnSend"
+        android:layout_width="wrap_content"
+        android:layout_marginStart="60dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/etMessage"
+        android:layout_gravity="center"
+        android:layout_marginTop="90dp"
+        android:text="send" />
+
+
+</RelativeLayout>
