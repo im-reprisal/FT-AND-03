@@ -1,0 +1,116 @@
+
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <View
+            android:id="@+id/view"
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:background="#CEDFE4"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="50dp"
+            android:layout_marginTop="20dp"
+            android:text="A short article"
+            android:textSize="30sp"
+            android:textAllCaps="false"
+            app:layout_constraintStart_toStartOf="@+id/view"
+            app:layout_constraintTop_toTopOf="@+id/view" />
+
+        <TextView
+            android:id="@+id/tvpalace"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:text="Blue Ocean wave crash"
+            android:textSize="25dp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/view" />
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/ivtravel"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toBottomOf="@+id/tvpalace"
+            android:layout_marginTop="32dp">
+
+            <ImageView
+                android:id="@+id/ivtravel2"
+                android:layout_width="293dp"
+                android:layout_height="367dp"
+                android:layout_marginStart="64dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/blue_surfing"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tvpalace"
+                app:layout_constraintVertical_bias="0.04" />
+
+        </androidx.cardview.widget.CardView>
+
+
+
+        <TextView
+            android:id="@+id/tvperson"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toBottomOf="@+id/ivtravel"
+            android:text="The cause of this wave"
+            android:layout_marginTop="20dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:textSize="30dp"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:id="@+id/tvshortnote"
+            android:layout_width="370dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="In the middle of the Western Pacific, at a depth of 10,988 metres, it encountered a lone plastic bag. Scientists believe it’s the world’s deepest known piece of plastic rubbish. And it will take 400 to 1,000 years to disintegrate."
+            android:textSize="15sp"
+            android:textAllCaps="false"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tvperson" />
+
+        <TextView
+            android:id="@+id/tvlongnote"
+            android:layout_width="370dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="Before a piece of plastic reaches open water, before it sinks to the ocean floor, it likely is deposited somewhere along our coastlines. Every year, up to 13 million tonnes of plastic reaches the ocean. That is equivalent to dumping the contents of one garbage truck into the ocean every minute, according to UN Environment.Plastic is especially lethal to coral reef systems. Healthy coral reefs are the nurseries of the underwater world, nurturing an astonishing array of living organisms. They protect over 150,000 km of shoreline in 100 countries and territories, safeguarding coastal communities from heavy storm surges, winds and waves. A recent study found that, when corals come in contact with plastic, the likelihood of disease shoots up from 4 percent to 90 percent."
+            android:textAllCaps="false"
+            android:textSize="15dp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.609"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tvshortnote"
+            android:drawablePadding="20dp"
+            app:layout_constraintVertical_bias="0.0" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>
