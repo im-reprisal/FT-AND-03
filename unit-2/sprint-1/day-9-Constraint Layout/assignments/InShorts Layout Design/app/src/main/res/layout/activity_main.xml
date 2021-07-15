@@ -17,7 +17,7 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <ImageView
-        android:id="@+id/ivback"
+        android:id="@+id/ivBack"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_margin="25dp"
@@ -27,6 +27,7 @@
 
 
     <TextView
+        android:id="@+id/heading"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="40dp"
@@ -35,11 +36,11 @@
         android:textColor="@color/white"
         android:textSize="20sp"
         android:textStyle="bold"
-        app:layout_constraintStart_toEndOf="@id/ivback"
+        app:layout_constraintStart_toEndOf="@id/ivBack"
         app:layout_constraintTop_toTopOf="parent" />
 
     <ImageView
-        android:id="@+id/ivhouse"
+        android:id="@+id/ivHome"
         android:layout_width="wrap_content"
         android:layout_height="0dp"
         android:layout_margin="25dp"
@@ -58,7 +59,7 @@
         app:srcCompat="@drawable/cigarette_buts" />
 
     <Button
-        android:id="@+id/btnshare"
+        android:id="@+id/btnShare"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="228dp"
@@ -68,7 +69,7 @@
         app:layout_constraintTop_toBottomOf="@+id/view" />
 
     <View
-        android:id="@+id/imageView3"
+        android:id="@+id/View"
         android:layout_width="2dp"
         android:background="#ff000000"
         android:layout_height="50dp"
@@ -78,7 +79,7 @@
         app:layout_constraintTop_toBottomOf="@+id/imageView" />
 
     <TextView
-        android:id="@+id/ivtagline"
+        android:id="@+id/tvHeading"
         android:layout_width="251dp"
         android:layout_height="wrap_content"
         android:textStyle="bold"
@@ -87,11 +88,11 @@
         android:text="Punjab 1st in India to Ban Cigaretee"
         android:layout_marginStart="20dp"
         android:textSize="22sp"
-        app:layout_constraintStart_toEndOf="@+id/imageView3"
+        app:layout_constraintStart_toEndOf="@+id/View"
         app:layout_constraintTop_toBottomOf="@+id/imageView" />
 
     <TextView
-        android:id="@+id/textView"
+        android:id="@+id/tvContent"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="5dp"
@@ -102,10 +103,10 @@
         android:textAllCaps="false"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/ivtagline" />
+        app:layout_constraintTop_toBottomOf="@+id/tvHeading" />
 
     <View
-        android:id="@+id/viewbottom"
+        android:id="@+id/ivFooter"
         android:layout_width="match_parent"
         android:layout_height="40dp"
         android:background="#313236"
@@ -115,7 +116,6 @@
         app:layout_constraintStart_toStartOf="parent" />
 
     <TextView
-        android:id="@+id/tvpublished"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Published at 12:00 pm"
@@ -125,6 +125,6 @@
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/viewbottom" />
+        app:layout_constraintTop_toTopOf="@+id/ivFooter" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
