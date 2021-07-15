@@ -1,0 +1,235 @@
+<?xml version="1.0" encoding="utf-8"?>
+<HorizontalScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/ct1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <Button
+                android:id="@+id/btn1"
+                android:text="1"
+                style="@style/number"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <Button
+                android:id="@+id/btn2"
+                style="@style/number"
+                android:layout_marginTop="20dp"
+                android:text="2"
+                app:layout_constraintStart_toEndOf="@+id/btn1"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <Button
+                android:id="@+id/btn3"
+                style="@style/number"
+                android:text="3"
+                app:layout_constraintStart_toEndOf="@+id/btn2"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <Button
+                android:id="@+id/btn4"
+                style="@style/number"
+                android:text="4"
+                app:layout_constraintStart_toEndOf="@+id/btn3"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <Button
+                android:id="@+id/btn5"
+                style="@style/number"
+                android:text="5"
+                app:layout_constraintStart_toEndOf="@+id/btn4"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <Button
+                android:id="@+id/btn6"
+                style="@style/number"
+                android:text="6"
+                app:layout_constraintStart_toEndOf="@+id/btn5"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <Button
+                android:id="@+id/btn7"
+                style="@style/number"
+                android:text="7"
+                app:layout_constraintStart_toEndOf="@+id/btn6"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <Button
+                android:id="@+id/btn8"
+                style="@style/number"
+                android:text="8"
+                app:layout_constraintStart_toEndOf="@+id/btn7"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <Button
+                android:id="@+id/btn9"
+                style="@style/number"
+                android:text="9"
+                app:layout_constraintStart_toEndOf="@+id/btn8"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <Button
+                android:id="@+id/btn10"
+                style="@style/number"
+                android:text="10"
+                app:layout_constraintStart_toEndOf="@+id/btn9"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <Button
+                android:id="@+id/btn11"
+                style="@style/number"
+                android:text="11"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/btn1" />
+
+            <Button
+                android:id="@+id/btn12"
+                style="@style/number"
+                android:layout_marginTop="20dp"
+                android:text="12"
+                app:layout_constraintStart_toEndOf="@+id/btn11"
+                app:layout_constraintTop_toBottomOf="@id/btn2" />
+
+            <Button
+                android:id="@+id/btn13"
+                style="@style/number"
+                android:text="13"
+                app:layout_constraintStart_toEndOf="@+id/btn12"
+                app:layout_constraintTop_toBottomOf="@id/btn3" />
+
+            <Button
+                android:id="@+id/btn14"
+                style="@style/number"
+                android:text="14"
+                app:layout_constraintStart_toEndOf="@+id/btn13"
+                app:layout_constraintTop_toBottomOf="@id/btn4" />
+
+            <Button
+                android:id="@+id/btn15"
+                style="@style/number"
+                android:text="15"
+                app:layout_constraintStart_toEndOf="@+id/btn14"
+                app:layout_constraintTop_toBottomOf="@id/btn5" />
+
+            <Button
+                android:id="@+id/btn16"
+                style="@style/number"
+                android:text="16"
+                app:layout_constraintStart_toEndOf="@+id/btn15"
+                app:layout_constraintTop_toBottomOf="@id/btn6" />
+
+            <Button
+                android:id="@+id/btn17"
+                style="@style/number"
+                android:text="17"
+                app:layout_constraintStart_toEndOf="@+id/btn16"
+                app:layout_constraintTop_toBottomOf="@id/btn7"/>
+
+            <Button
+                android:id="@+id/btn18"
+                style="@style/number"
+                android:text="18"
+                app:layout_constraintStart_toEndOf="@+id/btn17"
+                app:layout_constraintTop_toBottomOf="@id/btn8" />
+
+            <Button
+                android:id="@+id/btn19"
+                style="@style/number"
+                android:text="19"
+                app:layout_constraintStart_toEndOf="@+id/btn8"
+                app:layout_constraintTop_toBottomOf="@id/btn9" />
+
+            <Button
+                android:id="@+id/btn20"
+                style="@style/number"
+                android:text="20"
+                app:layout_constraintStart_toEndOf="@+id/btn19"
+                app:layout_constraintTop_toBottomOf="@id/btn10" />
+
+            <Button
+                android:id="@+id/btn21"
+                style="@style/number"
+                android:layout_marginLeft="20dp"
+                android:text="21"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/btn11" />
+
+            <Button
+                android:id="@+id/btn22"
+                style="@style/number"
+                android:layout_marginTop="20dp"
+                android:text="22"
+                app:layout_constraintStart_toEndOf="@+id/btn21"
+                app:layout_constraintTop_toBottomOf="@id/btn12" />
+
+            <Button
+                android:id="@+id/btn23"
+                style="@style/number"
+                android:text="23"
+                app:layout_constraintStart_toEndOf="@+id/btn22"
+                app:layout_constraintTop_toBottomOf="@id/btn13" />
+
+            <Button
+                android:id="@+id/btn24"
+                style="@style/number"
+                android:text="24"
+                app:layout_constraintStart_toEndOf="@+id/btn23"
+                app:layout_constraintTop_toBottomOf="@id/btn14" />
+
+            <Button
+                android:id="@+id/btn25"
+                style="@style/number"
+                android:text="25"
+                app:layout_constraintStart_toEndOf="@+id/btn24"
+                app:layout_constraintTop_toBottomOf="@id/btn15" />
+
+            <Button
+                android:id="@+id/btn26"
+                style="@style/number"
+                android:text="26"
+                app:layout_constraintStart_toEndOf="@+id/btn25"
+                app:layout_constraintTop_toBottomOf="@id/btn16" />
+            <Button
+                android:id="@+id/btn27"
+                style="@style/number"
+                android:text="27"
+                app:layout_constraintStart_toEndOf="@+id/btn26"
+                app:layout_constraintTop_toBottomOf="@id/btn17"/>
+
+            <Button
+                android:id="@+id/btn28"
+                style="@style/number"
+                android:text="28"
+                app:layout_constraintStart_toEndOf="@+id/btn27"
+                app:layout_constraintTop_toBottomOf="@id/btn18" />
+
+            <Button
+                android:id="@+id/btn29"
+                style="@style/number"
+                android:text="29"
+                app:layout_constraintStart_toEndOf="@+id/btn28"
+                app:layout_constraintTop_toBottomOf="@id/btn19" />
+
+            <Button
+                android:id="@+id/btn30"
+                style="@style/number"
+                android:text="30"
+                app:layout_constraintStart_toEndOf="@+id/btn29"
+                app:layout_constraintTop_toBottomOf="@id/btn20" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </LinearLayout>
+</HorizontalScrollView>
