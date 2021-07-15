@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/Buyer"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="#0000ff"
+        android:gravity="center"
+        android:text="Add Details by Of a buyer"
+        android:textColor="@color/white"
+        android:textSize="18sp" />
+
+    <Button
+        android:id="@+id/btnClick"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:background="@drawable/ic_check"/>
+
+    <EditText
+        android:id="@+id/etOrganisationName"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_below="@+id/Buyer"
+        android:hint="     Enter Organization Name "
+        android:textColor="@color/black"
+        android:textSize="18sp"
+        android:background="#4169E1"/>
+
+    <TextView
+        android:id="@+id/Details"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:text="Enter the below Details  "
+        android:layout_below="@id/etOrganisationName"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"/>
+    <TextView
+        android:id="@+id/tvName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Customer Name"
+        android:layout_marginStart="15dp"
+        android:layout_below="@+id/Details"
+        android:textSize="15sp"
+        android:layout_marginTop="10dp"/>
+
+    <EditText
+        android:id="@+id/etName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter the customer name "
+        android:layout_below="@+id/tvName"
+        android:layout_margin="10dp"/>
+
+    <TextView
+        android:id="@+id/tvMobileNo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Mobile Number "
+        android:layout_below="@+id/etName"
+        android:layout_marginStart="15dp"
+        android:textSize="15sp"
+        android:layout_marginTop="10dp"/>
+
+    <EditText
+        android:id="@+id/etMobileNo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter the Mobile Number "
+        android:layout_below="@+id/tvMobileNo"
+        android:layout_margin="10dp"/>
+
+    <TextView
+        android:id="@+id/tvEmail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Email id"
+        android:layout_below="@+id/etMobileNo"
+        android:layout_marginStart="15dp"
+        android:textSize="15sp"
+        android:layout_marginTop="10dp"/>
+
+    <EditText
+        android:id="@+id/etEmail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter the Email Id "
+        android:layout_below="@+id/tvEmail"
+        android:layout_margin="10dp"/>
+
+    <TextView
+        android:id="@+id/tvAddress"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Address"
+        android:layout_below="@+id/etEmail"
+        android:layout_marginStart="15dp"
+        android:textSize="15sp"
+        android:layout_marginTop="10dp"/>
+
+    <EditText
+        android:id="@+id/etAddress"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter the Address "
+        android:layout_below="@+id/tvAddress"
+        android:layout_margin="10dp"/>
+
+    <TextView
+        android:id="@+id/tvManufacturerName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Manufacturer"
+        android:layout_below="@+id/etAddress"
+        android:layout_marginStart="10dp"
+        android:textSize="15sp"
+        android:layout_marginTop="10dp"/>
+
+    <EditText
+        android:id="@+id/etManufacturerName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter the Manufacturer Name "
+        android:layout_below="@+id/tvManufacturerName"
+        android:layout_margin="10dp"/>
+
+    <TextView
+        android:id="@+id/tvId"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="I D"
+        android:layout_below="@+id/etManufacturerName"
+        android:layout_marginStart="10dp"
+        android:textSize="15sp"
+        android:drawablePadding="20dp"
+        android:layout_marginTop="10dp"/>
+
+    <EditText
+        android:id="@+id/etId"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter the id "
+        android:layout_below="@+id/tvId"
+        android:layout_margin="10dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Thank You for the Details "
+        android:layout_below="@id/etId"
+        android:layout_centerInParent="true"/>
+</RelativeLayout>
