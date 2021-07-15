@@ -8,14 +8,12 @@ import android.widget.EditText;
 import android.widget.TextView;
 
 public class SecondActivity extends AppCompatActivity {
-    private TextView mtvaddbuyer;
     private EditText mEtOrganizationName;
     private TextView mTvDetails;
     private TextView mTvName;
     private TextView mTvEmail;
     private TextView mTvAddress;
     private TextView mtvManufacturer;
-    private TextView mTvThanks;
     private TextView mTvId;
     private TextView mTvMobileNo;
 
