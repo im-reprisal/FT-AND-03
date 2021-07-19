@@ -11,7 +11,12 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class ResponseAdapter extends RecyclerView.Adapter<ResponseViewHolder> {
+    private OnLongClick onLongClick;
     private List<ResponseModel> responseModelList;
+
+    public ResponseAdapter(List<ResponseModel> responseModel, OnLongClick onLongClick) {
+        this.onLongClick = onLongClick;
+    }
 
     public ResponseAdapter(ArrayList<ResponseModel> responseModelList) {
         this.responseModelList = responseModelList;
@@ -27,7 +32,7 @@ public class ResponseAdapter extends RecyclerView.Adapter<ResponseViewHolder> {
     @Override
     public void onBindViewHolder(@NonNull ResponseViewHolder holder, int position) {
         ResponseModel responseModel = responseModelList.get(position);
-        holder.setData(responseModel);
+        holder.setData(responseModel,onLongClick);
     }
 
     @Override
@@ -38,4 +43,5 @@ public class ResponseAdapter extends RecyclerView.Adapter<ResponseViewHolder> {
         this.responseModelList = responseModel;
         notifyDataSetChanged();
     }
+
 }
