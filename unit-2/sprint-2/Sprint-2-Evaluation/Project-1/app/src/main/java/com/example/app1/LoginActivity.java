@@ -14,6 +14,7 @@ public class LoginActivity extends AppCompatActivity {
    private EditText mEtPassword;
    private CheckBox mEtCheckbox;
    private Button mBtnLogin;
+    private String emailValidation = "[a-zA-Z0-9._-]+@[a-z]+\\.+[a-z]+";
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -29,28 +30,29 @@ public class LoginActivity extends AppCompatActivity {
         mBtnLogin.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                if (checkValidity()==true) {
+                boolean isPasswordValid = isPasswordValid();
+                boolean isEmailValid = isEmailValid();
+                if (isEmailValid && isPasswordValid) {
                     Intent intent = new Intent(LoginActivity.this, HomeActivity.class);
                     startActivity(intent);
                 }
             }
         });
     }
-    public boolean checkValidity(){
-        String email = mEtPassword.getText().toString();
-        String password = mEtPassword.getText().toString();
-        if (email.isEmpty()){
-            mEtEmail.setError("Email address should not be empty");
+    private boolean isEmailValid() {
+        if (mEtEmail.getText().toString().matches(emailValidation)) {
+            return true;
+        } else {
+            mEtEmail.setError("Invalid email");
+            return false;
         }
-        else if (email.contains("@gmail.com")){
-            mEtEmail.setError("Please enter a valid email");
+    }
+    private boolean isPasswordValid() {
+        if (mEtPassword.getText().toString().length() >= 6) {
+            return true;
+        } else {
+            mEtPassword.setError("Password is weak.");
+            return false;
         }
-        if (password.isEmpty()){
-            mEtPassword.setError("Password should not be empty");
-        }
-        else if (password.length() < 6){
-            mEtPassword.setError("Password is very short");
-        }
-        return true;
     }
 }
