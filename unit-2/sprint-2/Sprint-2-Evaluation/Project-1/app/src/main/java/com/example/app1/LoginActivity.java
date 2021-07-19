@@ -3,6 +3,7 @@ package com.example.app1;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
@@ -15,6 +16,7 @@ public class LoginActivity extends AppCompatActivity {
    private CheckBox mEtCheckbox;
    private Button mBtnLogin;
     private String emailValidation = "[a-zA-Z0-9._-]+@[a-z]+\\.+[a-z]+";
+    private static final String SHARED_PREFERENCE_KEY = "com.xyz.sharedpreferences";
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -36,6 +38,19 @@ public class LoginActivity extends AppCompatActivity {
                     Intent intent = new Intent(LoginActivity.this, HomeActivity.class);
                     startActivity(intent);
                 }
+            }
+        });
+        mEtCheckbox.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                String emailId = mEtEmail.getText().toString();
+                String password = mEtPassword.getText().toString();
+
+                SharedPreferences sharedPreferences = getSharedPreferences(SHARED_PREFERENCE_KEY,MODE_PRIVATE);
+                SharedPreferences.Editor editor = sharedPreferences.edit();
+                editor.putString("email",emailId);
+                editor.putString("password",password);
+                editor.apply();
             }
         });
     }
