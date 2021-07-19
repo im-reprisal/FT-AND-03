@@ -8,9 +8,10 @@ import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
 import java.util.ArrayList;
+import java.util.List;
 
 public class ResponseAdapter extends RecyclerView.Adapter<ResponseViewHolder> {
-    private ArrayList<ResponseModel> responseModelList;
+    private List<ResponseModel> responseModelList;
 
     public ResponseAdapter(ArrayList<ResponseModel> responseModelList) {
         this.responseModelList = responseModelList;
@@ -25,12 +26,16 @@ public class ResponseAdapter extends RecyclerView.Adapter<ResponseViewHolder> {
 
     @Override
     public void onBindViewHolder(@NonNull ResponseViewHolder holder, int position) {
-        ResponseModel model = responseModelList.get(position);
-        holder.setData(model);
+        ResponseModel responseModel = responseModelList.get(position);
+        holder.setData(responseModel);
     }
 
     @Override
     public int getItemCount() {
         return responseModelList.size();
+    }
+    public void updateData(List<ResponseModel> responseModel){
+        this.responseModelList = responseModel;
+        notifyDataSetChanged();
     }
 }
