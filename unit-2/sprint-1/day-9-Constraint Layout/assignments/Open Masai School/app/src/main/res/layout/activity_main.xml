@@ -7,33 +7,14 @@
     tools:context=".MainActivity">
 
     <Button
-        android:id="@+id/btnclick"
+        android:id="@+id/btnClick"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="click here to open MASAI Website"
-        app:layout_constraintBottom_toTopOf="@+id/btnclick3"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/btnclick2"/>
-
-    <Button
-        android:id="@+id/btnclick2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="click here to open google"
-        app:layout_constraintBottom_toTopOf="@+id/btnclick"
+        android:text="click to open"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
-    <Button
-        android:id="@+id/btnclick3"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="click here to open gmail"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/btnclick" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
