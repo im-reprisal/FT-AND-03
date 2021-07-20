@@ -36,7 +36,7 @@ public class ResponseViewHolder extends RecyclerView.ViewHolder {
         mCardView.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                onLongClick.OnClick(responseModel);
+                LongClick.click(responseModel);
             }
         });
 
