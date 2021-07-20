@@ -49,8 +49,4 @@ public class HomeActivity extends AppCompatActivity implements LongClick{
         responseModelList.remove(responseModel);
         responseAdapter.updateData(responseModelList);
     }
-    @Override
-    public void click(ResponseModel responseModel) {
-
-    }
 }
