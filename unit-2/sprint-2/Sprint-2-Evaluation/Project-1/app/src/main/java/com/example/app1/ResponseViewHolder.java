@@ -24,7 +24,7 @@ public class ResponseViewHolder extends RecyclerView.ViewHolder {
         mTvDateChecked = itemView.findViewById(R.id.tvDateChecked);
         mCardView = itemView.findViewById(R.id.cardview);
     }
-    public void setData(ResponseModel responseModel,OnLongClick onLongClick){
+    public void setData(ResponseModel responseModel,LongClick onLongClick){
       mTvDate.setText(responseModel.getDate());
       mTvPositive.setText(responseModel.getPositive());
       mTvNegative.setText(responseModel.getNegative());

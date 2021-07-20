@@ -27,16 +27,12 @@ public class LoginActivity extends AppCompatActivity {
         mEtPassword = findViewById(R.id.etPassword);
         mEtCheckbox = findViewById(R.id.checkBox);
         mBtnLogin = findViewById(R.id.btnLogin);
-        SharedPreferences sharedPreferences = getSharedPreferences(FILE_NAME,MODE_PRIVATE);
-        String emailid = sharedPreferences.getString("EmailId","");
-        String Password = sharedPreferences.getString("Password","");
-        mEtEmail.setText(emailid);
+        SharedPreferences sharedPreferences = getSharedPreferences(FILE_NAME, MODE_PRIVATE);
+        String emailId = sharedPreferences.getString("EmailId", "");
+        String Password = sharedPreferences.getString("Password", "");
+        mEtEmail.setText(emailId);
         mEtPassword.setText(Password);
-        if(mEtCheckbox.isChecked()){
-            Intent intent = new Intent(LoginActivity.this,HomeActivity.class);
-            startActivity(intent);
-        }
-        else if(!mEtCheckbox.isChecked()) {
+        if (!mEtCheckbox.isChecked()) {
             mBtnLogin.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View v) {
@@ -44,22 +40,27 @@ public class LoginActivity extends AppCompatActivity {
                         Intent intent = new Intent(LoginActivity.this, HomeActivity.class);
                         startActivity(intent);
                     }
-                    String Emailid = mEtEmail.getText().toString();
+                    String EmailId = mEtEmail.getText().toString();
                     String Password = mEtPassword.getText().toString();
 
                     if (mEtCheckbox.isChecked()) {
-                        StoreData(Emailid, Password);
+                        saveInformation(EmailId, Password);
                     }
                     Intent intent = new Intent(LoginActivity.this, HomeActivity.class);
                     startActivity(intent);
                 }
             });
         }
+        else if (mEtCheckbox.isChecked()) {
+            Intent intent = new Intent(LoginActivity.this, HomeActivity.class);
+            startActivity(intent);
+        }
     }
     private boolean isEmailValid() {
         if (mEtEmail.getText().toString().matches(emailValidation)) {
             return true;
-        } else {
+        }
+        else {
             mEtEmail.setError("Invalid email");
             return false;
         }
@@ -67,16 +68,16 @@ public class LoginActivity extends AppCompatActivity {
     private boolean isPasswordValid() {
         if (mEtPassword.getText().toString().length() >= 6) {
             return true;
-        } else {
+        }
+        else {
             mEtPassword.setError("Password is weak.");
             return false;
         }
     }
-    private void StoreData(String Emailid, String Password) {
+    private void saveInformation(String EmailId, String Password) {
         SharedPreferences.Editor editor = getSharedPreferences(FILE_NAME,MODE_PRIVATE).edit();
-        editor.putString("EmailId",Emailid);
+        editor.putString("EmailId",EmailId);
         editor.putString("Password",Password);
         editor.apply();
-
     }
 }

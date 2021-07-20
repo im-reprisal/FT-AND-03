@@ -10,7 +10,7 @@ import retrofit2.Call;
 import retrofit2.Callback;
 import retrofit2.Response;
 
-public class HomeActivity extends AppCompatActivity implements OnLongClick{
+public class HomeActivity extends AppCompatActivity implements LongClick{
     private RecyclerView recyclerView;
     private List<ResponseModel> responseModelList = new ArrayList<>();
     private ResponseAdapter responseAdapter;
@@ -45,12 +45,12 @@ public class HomeActivity extends AppCompatActivity implements OnLongClick{
         });
     }
     @Override
-    public void OnClick(ResponseModel responseModel) {
-
-    }
-    @Override
     public void remove(ResponseModel responseModel) {
         responseModelList.remove(responseModel);
         responseAdapter.updateData(responseModelList);
+    }
+    @Override
+    public void click(ResponseModel responseModel) {
+
     }
 }

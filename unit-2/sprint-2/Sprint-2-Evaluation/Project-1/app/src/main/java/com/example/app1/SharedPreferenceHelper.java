@@ -4,7 +4,7 @@ import android.content.Context;
 import android.content.SharedPreferences;
 
 public class SharedPreferenceHelper {
-    private static final String SHARED_PREFERENCE_KEY = "com.xyz.sharedpreferences";
+    private static final String SHARED_PREFERENCE_KEY = "com.xyz.sharedPreferencesStorage";
     private static SharedPreferences sharedPreferences;
 
     public static SharedPreferences getInstance(Context context) {
