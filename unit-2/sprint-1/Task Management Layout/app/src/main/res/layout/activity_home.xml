@@ -1,0 +1,281 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".HomeActivity">
+
+
+    <Button
+        android:id="@+id/btnfront"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_margin="20dp" />
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="match_parent"
+        android:layout_height="115dp"
+        android:background="#4263EC"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/ivprofile"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="40dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tvname"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="40dp"
+        android:text="Hey, Sofia"
+        android:textColor="@color/white"
+        android:textSize="16dp"
+        app:layout_constraintStart_toEndOf="@id/ivprofile"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tvwelocme"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Weclome Back"
+        android:textAllCaps="false"
+        android:textColor="@color/white"
+        android:textSize="24dp"
+        app:layout_constraintStart_toStartOf="@id/tvname"
+        app:layout_constraintTop_toBottomOf="@+id/tvname" />
+
+    <TextView
+        android:id="@+id/tvtoday"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="30dp"
+        android:text="Today"
+        android:textAllCaps="false"
+        android:textSize="14dp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/textView2" />
+
+    <Button
+        android:id="@+id/fab"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|end"
+        android:paddingLeft="28dp"
+        app:layout_constraintTop_toBottomOf="@+id/tvbox3"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <TextView
+        android:id="@+id/tvbox"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="30dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tvtoday" />
+
+    <Button
+        android:id="@+id/btnclick"
+        android:layout_width="32dp"
+        android:layout_height="27dp"
+        android:layout_margin="30dp"
+        app:layout_constraintStart_toStartOf="@id/tvbox"
+        app:layout_constraintTop_toTopOf="@id/tvbox" />
+
+    <TextView
+        android:id="@+id/tvOmar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="10dp"
+        android:text="Meeting with Omar"
+        android:textAllCaps="false"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toEndOf="@id/btnclick"
+        app:layout_constraintTop_toTopOf="@id/tvbox" />
+
+    <TextView
+        android:id="@+id/tvtimeomar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="10dp"
+        android:text="08: 00 AM"
+        android:textColor="#CCCCCC"
+        android:textSize="16dp"
+        app:layout_constraintStart_toEndOf="@id/btnclick"
+        app:layout_constraintTop_toBottomOf="@id/tvOmar" />
+
+    <TextView
+        android:id="@+id/tvbox1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="30dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tvbox" />
+
+    <Button
+        android:id="@+id/btnclick1"
+        android:layout_width="32dp"
+        android:layout_height="27dp"
+        android:layout_margin="30dp"
+        app:layout_constraintStart_toStartOf="@id/tvbox1"
+        app:layout_constraintTop_toTopOf="@id/tvbox1" />
+
+    <TextView
+        android:id="@+id/tvFED"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="10dp"
+        android:text="Front End Development "
+        android:textAllCaps="false"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        app:layout_constraintStart_toEndOf="@id/btnclick2"
+        app:layout_constraintTop_toTopOf="@id/tvbox2" />
+
+    <TextView
+        android:id="@+id/tvGradle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="10dp"
+        android:text="Webinar on Gradle API"
+        android:textAllCaps="false"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toEndOf="@id/btnclick1"
+        app:layout_constraintTop_toTopOf="@id/tvbox1" />
+    <TextView
+        android:id="@+id/tvtimegradle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="10dp"
+        android:text="01: 00 PM"
+        android:textColor="#CCCCCC"
+        android:textSize="16dp"
+        app:layout_constraintStart_toEndOf="@id/btnclick1"
+        app:layout_constraintTop_toBottomOf="@id/tvGradle" />
+
+
+    <TextView
+        android:id="@+id/tom"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/tvbox1"
+        app:layout_constraintStart_toStartOf="parent"
+        android:text="Tomorrow"
+        android:textColor="@color/black"
+        android:textSize="16dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="10dp"/>
+
+    <TextView
+        android:id="@+id/tvbox2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="30dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tom" />
+
+    <Button
+        android:id="@+id/btnclick2"
+        android:layout_width="32dp"
+        android:layout_height="27dp"
+        android:layout_margin="30dp"
+        app:layout_constraintStart_toStartOf="@id/tvbox2"
+        app:layout_constraintTop_toTopOf="@id/tvbox2" />
+
+    <TextView
+        android:id="@+id/tvfnd"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="10dp"
+        android:text="Front End Development "
+        android:textAllCaps="false"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toEndOf="@id/btnclick2"
+        app:layout_constraintTop_toTopOf="@id/tvbox2" />
+
+    <TextView
+        android:id="@+id/tvtimefnrd"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="10dp"
+        android:text="01: 00 PM"
+        android:textColor="#CCCCCC"
+        android:textSize="16dp"
+        app:layout_constraintStart_toEndOf="@id/btnclick2"
+        app:layout_constraintTop_toBottomOf="@id/tvFED" />
+
+    <TextView
+        android:id="@+id/date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/tvbox2"
+        app:layout_constraintStart_toStartOf="parent"
+        android:text="14th May 2021"
+        android:textColor="@color/black"
+        android:textSize="16dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="10dp"/>
+
+    <TextView
+        android:id="@+id/tvbox3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="30dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/date" />
+
+    <Button
+        android:id="@+id/btnclick3"
+        android:layout_width="32dp"
+        android:layout_height="27dp"
+        android:layout_margin="30dp"
+        app:layout_constraintStart_toStartOf="@id/tvbox3"
+        app:layout_constraintTop_toTopOf="@id/tvbox3" />
+
+    <TextView
+        android:id="@+id/tvBED"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="10dp"
+        android:text="Back End Development "
+        android:textAllCaps="false"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toEndOf="@id/btnclick3"
+        app:layout_constraintTop_toTopOf="@id/tvbox3" />
+
+    <TextView
+        android:id="@+id/tvbend"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="10dp"
+        android:text="01: 00 PM"
+        android:textColor="#CCCCCC"
+        android:textSize="16dp"
+        app:layout_constraintStart_toEndOf="@id/btnclick3"
+        app:layout_constraintTop_toBottomOf="@id/tvBED" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

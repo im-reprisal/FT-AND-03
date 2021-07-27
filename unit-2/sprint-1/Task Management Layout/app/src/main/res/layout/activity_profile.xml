@@ -1,0 +1,307 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ProfileActivity">
+
+    <View
+        android:id="@+id/topView"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:background="@color/blue_bg"
+        app:layout_constraintEnd_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/btnBackArrowProfile"
+        android:layout_width="@dimen/dp_50"
+        android:layout_height="@dimen/dp_50"
+        android:layout_margin="@dimen/dp_20"
+        android:background="@drawable/ic_baseline_arrow_back_24"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/Profile"
+        app:layout_constraintStart_toEndOf="@+id/btnBackArrowProfile"
+        android:text="@string/profile"
+        style="@style/TextHedingWelcomeBack"
+        android:layout_marginTop="@dimen/dp_30"
+        android:layout_marginStart="@dimen/sp_20"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tvEmailProfile"
+        style="@style/TextHeySofia"
+        app:layout_constraintTop_toBottomOf="@id/Profile"
+        android:text="@string/sofiaborg_gmail_com"
+        android:layout_marginTop="@dimen/dp_20"
+        android:textSize="@dimen/sp_18"
+        app:layout_constraintStart_toEndOf="@id/btnBackArrowProfile"
+        android:layout_marginStart="@dimen/dp_20"/>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardviewTaskCompleted"
+        android:layout_width="match_parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/topView"
+        android:layout_margin="@dimen/dp_25"
+        android:elevation="@dimen/dp_10"
+        app:cardCornerRadius="@dimen/dp_20"
+        android:layout_height="wrap_content">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:padding="@dimen/dp_20"
+            android:layout_height="wrap_content">
+            <TextView
+                android:id="@+id/tvMeetingWithOmar"
+                android:text="@string/task_completed"
+                style="@style/TextMeeting"/>
+
+            <TextView
+                android:id="@+id/tvWeek"
+                android:layout_alignParentEnd="true"
+                style="@style/TextHeySofia"
+                android:text="@string/week"
+                android:layout_marginTop="@dimen/dp_10"
+                android:layout_marginEnd="@dimen/sp_20"
+                android:drawableEnd="@drawable/ic_baseline_arrow_drop_down_24"
+                android:textSize="@dimen/sp_20"/>
+
+            <TextView
+                style="@style/dottedLine"
+                android:id="@+id/line25"
+                android:layout_below="@+id/tvWeek"
+                android:drawableEnd="@drawable/ic_dottedline"
+                android:drawablePadding="@dimen/dp_10"
+                android:text="@string/_25"/>
+            <TextView
+                style="@style/dottedLine"
+                android:id="@+id/line20"
+                android:layout_below="@+id/line25"
+                android:drawableEnd="@drawable/ic_dottedline"
+                android:drawablePadding="@dimen/dp_10"
+                android:text="@string/_20"/>
+            <TextView
+                style="@style/dottedLine"
+                android:id="@+id/line15"
+                android:layout_below="@+id/line20"
+                android:drawableEnd="@drawable/ic_dottedline"
+                android:drawablePadding="@dimen/dp_10"
+                android:text="@string/_15"/>
+            <TextView
+                style="@style/dottedLine"
+                android:id="@+id/line10"
+                android:layout_below="@+id/line15"
+                android:drawableEnd="@drawable/ic_dottedline"
+                android:drawablePadding="@dimen/dp_10"
+                android:text="@string/_10"/>
+            <TextView
+                style="@style/dottedLine"
+                android:id="@+id/line05"
+                android:layout_below="@+id/line10"
+                android:drawableEnd="@drawable/ic_dottedline"
+                android:drawablePadding="@dimen/dp_10"
+                android:text="@string/_05"/>
+            <TextView
+                style="@style/dottedLine"
+                android:id="@+id/line0"
+                android:layout_below="@+id/line05"
+                android:drawableEnd="@drawable/ic_dottedline"
+                android:drawablePadding="@dimen/dp_10"
+                android:text="@string/_0"/>
+
+
+            <ImageView
+                android:id="@+id/lineOne"
+                android:layout_height="140dp"
+                style="@style/ButtonGraph" />
+
+            <ImageView
+                android:id="@+id/lineTwo"
+                android:layout_height="@dimen/dp_50"
+                style="@style/ButtonGraph"
+                android:layout_toEndOf="@id/lineOne"/>
+            <ImageView
+                android:id="@+id/lineThree"
+                android:layout_height="110dp"
+                style="@style/ButtonGraph"
+                android:layout_toEndOf="@id/lineTwo"/>
+
+            <ImageView
+                android:id="@+id/lineFour"
+                android:layout_height="130dp"
+                style="@style/ButtonGraph"
+                android:layout_toEndOf="@id/lineThree"/>
+
+            <ImageView
+                android:id="@+id/lineFive"
+                android:layout_height="80dp"
+                style="@style/ButtonGraph"
+                android:layout_toEndOf="@id/lineFour"/>
+
+            <ImageView
+                android:id="@+id/lineSix"
+                android:layout_height="120dp"
+                style="@style/ButtonGraph"
+                android:layout_toEndOf="@id/lineFive"/>
+
+            <ImageView
+                android:id="@+id/lineSeven"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/today"
+                style="@style/ButtonGraph"
+                android:layout_toEndOf="@id/lineSix"/>
+
+            <View
+                android:id="@+id/view10"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_below="@+id/line0"/>
+
+            <TextView
+                android:id="@+id/forth"
+                style="@style/TextGraphNumber"
+                android:text="@string/_4th"
+                android:layout_marginStart="@dimen/dp_20"/>
+
+            <TextView
+                android:id="@+id/fifth"
+                style="@style/TextGraphNumber"
+                android:text="5th"
+                android:layout_toEndOf="@id/forth"
+                android:layout_marginStart="@dimen/dp_20"/>
+
+            <TextView
+                android:id="@+id/sixth"
+                style="@style/TextGraphNumber"
+                android:text="6th"
+                android:layout_toEndOf="@id/fifth"
+                android:layout_marginStart="@dimen/dp_20"/>
+
+            <TextView
+                android:id="@+id/seventh"
+                style="@style/TextGraphNumber"
+                android:text="7th"
+                android:layout_toEndOf="@id/sixth"
+                android:layout_marginStart="@dimen/dp_20"/>
+
+            <TextView
+                android:id="@+id/eighth"
+                style="@style/TextGraphNumber"
+                android:text="8th"
+                android:layout_toEndOf="@id/seventh"
+                android:layout_marginStart="@dimen/dp_20"/>
+
+            <TextView
+                android:id="@+id/ninth"
+                style="@style/TextGraphNumber"
+                android:text="9th"
+                android:layout_toEndOf="@id/eighth"
+                android:layout_marginStart="@dimen/dp_20"/>
+
+            <TextView
+                android:id="@+id/today"
+                style="@style/TextGraphNumber"
+                android:text="Today"
+                android:layout_toEndOf="@id/ninth"
+                android:layout_marginStart="@dimen/dp_20"/>
+
+        </RelativeLayout>
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardViewAchievement"
+        android:layout_width="match_parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/cardviewTaskCompleted"
+        android:layout_margin="@dimen/dp_25"
+        android:elevation="@dimen/dp_10"
+        app:cardCornerRadius="@dimen/dp_20"
+        android:layout_height="wrap_content">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:paddingBottom="@dimen/dp_10"
+            android:layout_height="wrap_content">
+            <TextView
+                android:id="@+id/tvAchievement"
+                android:text="@string/achievements"
+                style="@style/TextMeeting"/>
+
+            <ImageView
+                android:layout_below="@id/tvAchievement"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/priceOne"
+                android:layout_marginStart="@dimen/dp_50"
+                android:src="@drawable/ic_frame"/>
+            <TextView
+                android:id="@+id/tv7Day"
+                android:text="@string/_7_day_streak"
+                android:layout_below="@id/priceOne"
+                android:layout_marginStart="@dimen/dp_10"
+                android:textSize="@dimen/sp_15"
+                style="@style/TextMeeting"/>
+
+            <ImageView
+                android:layout_below="@id/tvAchievement"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/priceTwo"
+                android:layout_toEndOf="@+id/tv7Day"
+                android:layout_marginStart="@dimen/dp_40"
+                android:src="@drawable/ic_frame__1_"/>
+
+            <TextView
+                android:id="@+id/tv30Day"
+                android:text="@string/_30_day_streak"
+                android:layout_below="@id/priceTwo"
+                android:layout_marginStart="0dp"
+                android:textSize="@dimen/sp_15"
+                android:layout_toEndOf="@id/tv7Day"
+                style="@style/TextMeeting"/>
+
+            <ImageView
+                android:layout_below="@id/tvAchievement"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toEndOf="@+id/tv30Day"
+                android:layout_marginStart="@dimen/dp_50"
+                android:src="@drawable/ic_frame__2_"/>
+
+            <TextView
+                android:id="@+id/tv100Completion"
+                android:text="@string/champions"
+                android:layout_below="@id/priceTwo"
+                android:layout_marginStart="0dp"
+                android:textSize="@dimen/sp_15"
+                android:layout_toEndOf="@id/tv30Day"
+                style="@style/TextMeeting"/>
+        </RelativeLayout>
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardCiewSignout"
+        android:layout_width="match_parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/cardViewAchievement"
+        android:layout_margin="@dimen/dp_25"
+        android:elevation="@dimen/dp_50"
+        app:cardCornerRadius="@dimen/dp_20"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:id="@+id/btnSignOut"
+            android:background="@android:color/transparent"
+            android:textAllCaps="false"
+            android:text="@string/sign_out"
+            android:padding="@dimen/dp_20"
+            android:textColor="@color/orange"
+            android:paddingEnd="250dp"
+            style="@style/TextMeeting"/>
+
+    </androidx.cardview.widget.CardView>
+</androidx.constraintlayout.widget.ConstraintLayout>
