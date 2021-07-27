@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item name="tvFirstname1" type="id" />
+    <item name="etFirstName1" type="id" />
+    <item name="tvLastName1" type="id" />
+    <item name="etLastName1" type="id" />
+    <item name="tvEmail1" type="id" />
+    <item name="etEmaild1" type="id" />
+    <item name="tvPhoneNumber1" type="id" />
+    <item name="etPhoneNumber1" type="id" />
+    <item name="tvnoofseats" type="id" />
+    <item name="etnoofseats" type="id" />
+    <item name="tvDate" type="id" />
+    <item name="etDate" type="id" />
+</resources>
