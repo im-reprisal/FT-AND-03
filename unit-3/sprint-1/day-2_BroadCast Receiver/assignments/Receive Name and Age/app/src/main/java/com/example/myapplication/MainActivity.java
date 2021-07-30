@@ -1,4 +1,4 @@
-package com.example.app;
+package com.example.myapplication;
 
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.localbroadcastmanager.content.LocalBroadcastManager;
@@ -11,23 +11,25 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
 public class MainActivity extends AppCompatActivity {
-    private TextView mTVText;
-    private Button mBtnButton;
-    private LocalBroadcastManager localBroadcastManager;
+    Button btnSend;
+    TextView tvName, tvAge;
+    LocalBroadcastManager localBroadcastManager;
     private LocalReceiver localReceiver;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        mBtnButton = findViewById(R.id.button);
-        mTVText = findViewById(R.id.tvMessage);
+        btnSend = findViewById(R.id.btnSend);
+        tvAge = findViewById(R.id.tvAge);
+        tvName = findViewById(R.id.tvName);
         localBroadcastManager = LocalBroadcastManager.getInstance(this);
-        registerLocalReceiver();
-        mBtnButton.setOnClickListener(new View.OnClickListener() {
+        RegisterLocalreciever();
+        btnSend.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent("www.masai.com");
-                intent.putExtra("data", "Hello Masai School");
+                Intent intent = new Intent("www.details.com");
+                intent.putExtra("name", "Nishant");
+                intent.putExtra("age", "24");
                 localBroadcastManager.sendBroadcast(intent);
             }
         });
@@ -37,17 +39,20 @@ public class MainActivity extends AppCompatActivity {
         super.onDestroy();
         localBroadcastManager.unregisterReceiver(localReceiver);
     }
-    private void registerLocalReceiver() {
+    private void RegisterLocalreciever() {
         localReceiver = new LocalReceiver();
-        IntentFilter intentFilter = new IntentFilter("www.masai.com");
-        localBroadcastManager.registerReceiver(localReceiver,intentFilter);
+        IntentFilter intentFilter = new IntentFilter("www.details.com");
+        localBroadcastManager.registerReceiver(localReceiver, intentFilter);
     }
-    private class LocalReceiver extends BroadcastReceiver{
+    private class LocalReceiver extends BroadcastReceiver {
+
         @Override
         public void onReceive(Context context, Intent intent) {
-            if(intent!=null){
-                String data = intent.getStringExtra("data");
-                mTVText.setText(data);
+            if (intent != null) {
+                String name = intent.getStringExtra("name");
+                String age = intent.getStringExtra("age");
+                tvAge.setText(age);
+                tvName.setText(name);
             }
         }
     }
