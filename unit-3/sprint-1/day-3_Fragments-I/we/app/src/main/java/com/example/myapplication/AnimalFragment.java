@@ -30,15 +30,12 @@ public class AnimalFragment extends Fragment {
             animaList.add(animal);
         }
     }
-
-
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
         return inflater.inflate(R.layout.fragment_animal, container, false);
     }
-
     @Override
     public void onViewCreated(@NonNull View view, @Nullable Bundle savedInstanceState) {
         super.onViewCreated(view, savedInstanceState);
@@ -46,12 +43,10 @@ public class AnimalFragment extends Fragment {
         buildList();
         setRecyclerView();
     }
-
     private void setRecyclerView() {
         AnimalAdaptor animalAdaptor = new AnimalAdaptor(animaList);
         LinearLayoutManager linearLayoutManager = new LinearLayoutManager(getContext());
         recyclerView.setLayoutManager(linearLayoutManager);
         recyclerView.setAdapter(animalAdaptor);
-
     }
 }
