@@ -13,6 +13,8 @@ import android.view.ViewGroup;
 import android.widget.Button;
 import android.widget.EditText;
 public class StudentPerformanceDetailsFragment extends Fragment {
+
+
     private EditText mEtStudentGrade, mEtStudentPercentage;
     private Button mBtnPreview;
     private String name;

@@ -16,18 +16,18 @@ public class ViewPagerAdapter extends FragmentStatePagerAdapter {
     public Fragment getItem(int position) {
         switch (position){
             case 0:
-               return FirstFragment.newInstance();
+                return new FirstFragment();
+            // OR return FirstFragment.newInstance();
             case 1:
-                return SecondFragment.newInstance();
+               return SecondFragment.newInstance();
+               // OR return new SecondFragment();
         }
         return null;
     }
-
     @Nullable
     @Override
     public CharSequence getPageTitle(int position) {
         String tabName = "";
-
         switch (position){
             case 0:
                 tabName = "Tab - A";
@@ -38,12 +38,6 @@ public class ViewPagerAdapter extends FragmentStatePagerAdapter {
         }
         return tabName;
     }
-
-    /**
-     * this method will return number of fragments
-     *
-     * @return count of fragments
-     */
     @Override
     public int getCount() {
         return 2;

@@ -19,37 +19,30 @@ public class FirstFragment extends Fragment {
 
     private EditText mEtEnteredData;
     private Button mBtnSendData;
-
     private MainActivity mainActivity;
-
     public static FirstFragment newInstance(){
         FirstFragment firstFragment = new FirstFragment();
         return firstFragment;
     }
-
     @Override
     public void onAttach(@NonNull Context context) {
         super.onAttach(context);
         mainActivity = (MainActivity) context;
     }
-
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
         return inflater.inflate(R.layout.fragment_first, container, false);
     }
-
     @Override
     public void onViewCreated(@NonNull View view, @Nullable Bundle savedInstanceState) {
         super.onViewCreated(view, savedInstanceState);
         init(view);
     }
-
     private void init(View view) {
         mEtEnteredData = view.findViewById(R.id.etEnterData);
         mBtnSendData = view.findViewById(R.id.btnSendData);
-
         mBtnSendData.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -59,8 +52,6 @@ public class FirstFragment extends Fragment {
             }
         });
     }
-
-
     @Override
     public void onResume() {
         super.onResume();

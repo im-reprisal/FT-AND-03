@@ -3,13 +3,9 @@ package com.example.complex;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.fragment.app.FragmentStatePagerAdapter;
 import androidx.viewpager.widget.ViewPager;
-
 import android.os.Bundle;
-
 import com.google.android.material.tabs.TabLayout;
-
 public class MainActivity extends AppCompatActivity {
-
     private ViewPager viewPager;
     private TabLayout tabLayout;
     private String name;
