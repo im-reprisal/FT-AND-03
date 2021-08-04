@@ -22,7 +22,6 @@ public class StudentDetailsActivity extends AppCompatActivity implements Communi
         StudentPersonalDetailsFragment studentPersonalDetailsFragment = new StudentPersonalDetailsFragment();
         FragmentTransaction fragmentTransaction = fragmentManager.beginTransaction();
         fragmentTransaction.add(R.id.container, studentPersonalDetailsFragment, "personal").commit();
-
     }
 
     @Override
