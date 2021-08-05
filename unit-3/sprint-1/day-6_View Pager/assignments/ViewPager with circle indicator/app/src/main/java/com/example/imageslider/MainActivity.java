@@ -16,10 +16,11 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         viewPager = findViewById(R.id.viewPager);
-        imagesList.add(R.drawable.img1);
+        imagesList.add(R.drawable.img6);
         imagesList.add(R.drawable.img2);
         imagesList.add(R.drawable.img3);
-        imagesList.add(R.drawable.img4);
+        imagesList.add(R.drawable.img5);
+        imagesList.add(R.drawable.img7);
         viewPagerAdapter = new ViewPagerAdapter(this,imagesList);
         viewPager.setPadding(100,0,100,0);
         viewPager.setAdapter(viewPagerAdapter);
