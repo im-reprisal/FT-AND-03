@@ -20,8 +20,6 @@ public class MainActivity extends AppCompatActivity {
         initViews();
         workerThread = new WorkerThread();
         workerThread.start();
-        Log.d(TAG, "run");
-
     }
 
     private void initViews() {
