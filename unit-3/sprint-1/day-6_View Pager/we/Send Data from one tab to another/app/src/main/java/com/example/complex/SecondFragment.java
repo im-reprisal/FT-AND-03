@@ -51,7 +51,6 @@ public class SecondFragment extends Fragment implements CommunicationListener{
             mainActivity.setDataToSecondFragment(this);
         }
     }
-
     @Override
     public void onStart() {
         super.onStart();
