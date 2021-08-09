@@ -48,7 +48,7 @@ public class MainActivity extends AppCompatActivity {
             fos = openFileOutput(FILE_NAME,MODE_PRIVATE);
             fos.write(name.getBytes());
             mEtEnterName.getText().clear();
-//            Toast.makeText(this,"Saved to "+getFilesDir()+"/"+FILE_NAME,Toast.LENGTH_LONG).show();
+            Toast.makeText(this,"Saved to "+getFilesDir()+"/"+FILE_NAME,Toast.LENGTH_LONG).show();
         } catch (FileNotFoundException e) {
             e.printStackTrace();
         } catch (IOException e) {
