@@ -1,43 +1,35 @@
 package com.example.myapplication
-
-import android.content.Context
 import android.view.LayoutInflater
-import android.view.TextureView
 import android.view.View
 import android.view.ViewGroup
 import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
-import com.example.myapplication.ItemAdapter.ItemViewHolder
-
-class ItemAdapter (val context:Context,val taskList:MutableList<Task>):RecyclerView.Adapter<ItemViewHolder>(){
-   fun addItems(items:ArrayList<Task>){
-
-   }
-
-    override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ItemViewHolder {
-        val inflater = LayoutInflater.from(context)
-        val view = inflater.inflate(R.layout.item_layout,parent,false)
-        return ItemViewHolder(view)
+class ItemAdapter:RecyclerView.Adapter<ItemAdapter.ItemViewHolder>(){
+    private var itemList : ArrayList<Task> = ArrayList()
+    fun addItem(itm: MutableList<Task>){
+        this.itemList = itm as ArrayList<Task>
+        notifyDataSetChanged()
     }
+    override fun onCreateViewHolder(parent: ViewGroup, viewType: Int) = ItemViewHolder(
+        LayoutInflater.from(parent.context).inflate(R.layout.item_layout,parent,false)
+    )
 
     override fun onBindViewHolder(holder: ItemViewHolder, position: Int) {
-       val task = taskList.get(position)
-        holder.itemName.text = task.itemname
-        holder.price.text = task.price.toString()
-        holder.desc.text = task.desc
+       val itm = itemList[position]
+        holder.bindView(itm)
     }
 
     override fun getItemCount(): Int {
-        return taskList.size
+        return itemList.size
     }
-    class ItemViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView){
-         var itemName : TextView
-         var price : TextView
-         var desc : TextView
-         init {
-             itemName = itemView.findViewById(R.id.tvItemName)
-             price = itemView.findViewById(R.id.tvPrice)
-             desc = itemView.findViewById(R.id.tvDesc)
-         }
+    class ItemViewHolder(var view : View) : RecyclerView.ViewHolder(view){
+        private var itemName = view.findViewById<TextView>(R.id.tvItemName)
+        private var price = view.findViewById<TextView>(R.id.tvPrice)
+        private var desc = view.findViewById<TextView>(R.id.tvDesc)
+        fun bindView(itm:Task){
+            itemName.text = itm.itemname.toString()
+            price.text = itm.price.toString()
+            desc.text = itm.desc.toString()
+        }
     }
 }

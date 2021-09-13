@@ -10,7 +10,7 @@ import kotlinx.android.synthetic.main.activity_main.*
 class MainActivity : AppCompatActivity() {
     private lateinit var sqliteHelper : DatabaseHandler
     private lateinit var recyclerView : RecyclerView
-    private lateinit var adapter : ItemAdapter
+    private  var adapter : ItemAdapter? = null
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
@@ -27,8 +27,7 @@ class MainActivity : AppCompatActivity() {
 
     private fun getData() {
        val taskList = sqliteHelper.getAllItem()
-        recyclerView.adapter=adapter
-        adapter?.addItems(taskList as ArrayList<Task>)
+        adapter?.addItem(taskList)
     }
 
     private fun addItem() {
@@ -41,6 +40,7 @@ class MainActivity : AppCompatActivity() {
     }
     fun initRecyclerView(){
         recyclerView.layoutManager = LinearLayoutManager(this)
+        adapter = ItemAdapter()
         recyclerView.adapter = adapter
     }
 }
