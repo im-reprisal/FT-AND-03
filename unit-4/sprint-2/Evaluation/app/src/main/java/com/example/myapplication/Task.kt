@@ -1,8 +1,7 @@
 package com.example.myapplication
 
-class Task {
-    var id = 0
-    var price = 0
+class Task(itemname: String, price: String, desc: String) {
+    var price = ""
     var itemname = ""
     var desc = ""
 }

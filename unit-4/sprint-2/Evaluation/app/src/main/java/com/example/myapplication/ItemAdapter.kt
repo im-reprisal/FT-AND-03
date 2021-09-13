@@ -9,8 +9,11 @@ import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
 import com.example.myapplication.ItemAdapter.ItemViewHolder
 
-class ItemAdapter (val context:Context,val taskList:MutableList<Task>):RecyclerView.Adapter<ItemViewHolder>(){
-
+class ItemAdapter (val context:Context, var taskList:MutableList<Task>):RecyclerView.Adapter<ItemViewHolder>(){
+   fun addItems(items:ArrayList<Task>){
+       this.taskList = items
+       notifyDataSetChanged()
+   }
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ItemViewHolder {
         val inflater = LayoutInflater.from(context)

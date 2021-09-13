@@ -55,18 +55,20 @@ class DatabaseHandler(private val context:Context):SQLiteOpenHelper(context,DB_N
         }
         if (cursor.moveToFirst()) {
             do {
-                val id = cursor.getInt(cursor.getColumnIndex(ID))
-                val price = cursor.getInt(cursor.getColumnIndex(PRICE))
-                val itemname = cursor.getString(cursor.getColumnIndex(ITEM_NAME))
-                val desc = cursor.getString(cursor.getColumnIndex(DESC))
+                var id = cursor.getInt(cursor.getColumnIndex(ID))
+                var price = cursor.getString(cursor.getColumnIndex(PRICE))
+                var itemname = cursor.getString(cursor.getColumnIndex(ITEM_NAME))
+                var desc = cursor.getString(cursor.getColumnIndex(DESC))
 
-                val task = Task()
-                task.id = id
-                task.price = price
-                task.itemname = itemname
-                task.desc = desc
+//                val task = Task()
+//                task.id = id
+//                task.price = price
+//                task.itemname = itemname
+//                task.desc = desc
 
-                taskList.add(task)
+                val itm = Task(itemname = itemname ,price = price , desc = desc)
+
+                taskList.add(itm)
             } while (cursor.moveToNext())
         }
         return taskList
