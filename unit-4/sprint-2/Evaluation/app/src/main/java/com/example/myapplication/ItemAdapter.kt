@@ -4,18 +4,13 @@ import android.view.View
 import android.view.ViewGroup
 import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
-class ItemAdapter:RecyclerView.Adapter<ItemAdapter.ItemViewHolder>(){
-    private var itemList : ArrayList<Task> = ArrayList()
-    fun addItem(itm: MutableList<Task>){
-        this.itemList = itm as ArrayList<Task>
-        notifyDataSetChanged()
+class ItemAdapter(val itemList: List<Task>, tasksList: MutableList<Task>): RecyclerView.Adapter<ItemAdapter.ItemViewHolder>() {
+    override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ItemViewHolder{
+        val view = LayoutInflater.from(parent.context).inflate(R.layout.item_layout, parent, false)
+        return ItemViewHolder(view)
     }
-    override fun onCreateViewHolder(parent: ViewGroup, viewType: Int) = ItemViewHolder(
-        LayoutInflater.from(parent.context).inflate(R.layout.item_layout,parent,false)
-    )
-
     override fun onBindViewHolder(holder: ItemViewHolder, position: Int) {
-       val itm = itemList[position]
+       val itm:Task = itemList[position]
         holder.bindView(itm)
     }
 

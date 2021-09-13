@@ -2,21 +2,18 @@ package com.example.myapplication
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import android.widget.Toast
 import androidx.recyclerview.widget.LinearLayoutManager
-import androidx.recyclerview.widget.RecyclerView
 import kotlinx.android.synthetic.main.activity_main.*
 
 class MainActivity : AppCompatActivity() {
-    private lateinit var sqliteHelper : DatabaseHandler
-    private lateinit var recyclerView : RecyclerView
-    private  var adapter : ItemAdapter? = null
+    private var tasksList = mutableListOf<Task>()
+    private val itemModel = listOf<Task>()
+    private val dataBaseHandler = DataBaseHandler(this)
+    private lateinit var adapter: ItemAdapter
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
-        recyclerView = findViewById(R.id.recyclerView)
         initRecyclerView()
-        sqliteHelper = DatabaseHandler(this)
         btnSave.setOnClickListener {
             addItem()
         }
@@ -26,21 +23,22 @@ class MainActivity : AppCompatActivity() {
     }
 
     private fun getData() {
-       val taskList = sqliteHelper.getAllItem()
-        adapter?.addItem(taskList)
+        tasksList.clear()
+        tasksList.addAll(dataBaseHandler.getAllItems())
+//        liveData.getData(tasksList.size)
+        adapter.notifyDataSetChanged()
     }
 
     private fun addItem() {
-       val itemname = etItemName.text.toString()
-        val price = etPrice.text.toString()
-        val desc = etDesc.text.toString()
-        val itm = Task(itemname = itemname , price = price , desc = desc)
-        sqliteHelper.insertItem(itm)
-        Toast.makeText(this,"Saved",Toast.LENGTH_SHORT).show()
+        dataBaseHandler?.insertItem(
+            etItemName.text.toString(),
+            etPrice.text.toString().toInt(),
+            etDesc.text.toString())
     }
     fun initRecyclerView(){
-        recyclerView.layoutManager = LinearLayoutManager(this)
-        adapter = ItemAdapter()
+        val LayoutManager = LinearLayoutManager(this)
+        adapter = ItemAdapter(itemModel,tasksList)
         recyclerView.adapter = adapter
+        recyclerView.layoutManager = LayoutManager
     }
 }
