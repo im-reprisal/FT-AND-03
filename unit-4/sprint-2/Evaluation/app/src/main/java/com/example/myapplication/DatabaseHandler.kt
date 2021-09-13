@@ -2,12 +2,14 @@ package com.example.myapplication
 
 import android.content.ContentValues
 import android.content.Context
+import android.database.Cursor
 import android.database.sqlite.SQLiteDatabase
 import android.database.sqlite.SQLiteOpenHelper
+import java.lang.Exception
 
 class DatabaseHandler(private val context:Context):SQLiteOpenHelper(context,DB_NAME,null,DB_VERSION) {
     companion object{
-        val DB_NAME = "MyStore"
+        val DB_NAME = "mystore.db"
         val DB_VERSION = 1
         val TABLE_NAME = "store"
         val ID = "id"
@@ -25,39 +27,50 @@ class DatabaseHandler(private val context:Context):SQLiteOpenHelper(context,DB_N
                 "$DESC TEXT)"
         db?.execSQL(CREATE_TABLE_QUERY)
     }
-    fun insertTask(itemname:String,price:Int,desc:String){
+    fun insertItem(itm : Task) :Long{
         val db = writableDatabase
         val values = ContentValues()
-        values.put(ITEM_NAME,itemname)
-        values.put(PRICE,price)
-        values.put(DESC,desc)
-        val idValue = db.insert(TABLE_NAME,null,values)
+        values.put(ITEM_NAME,itm.itemname)
+        values.put(PRICE,itm.price)
+        values.put(DESC,itm.desc)
+        val success = db.insert(TABLE_NAME,null,values)
+        db.close()
+        return success
     }
-    fun getAllTask() :MutableList<Task>{
-        val taskList = mutableListOf<Task>()
+    fun getAllItem() :MutableList<Task> {
+        val taskList: ArrayList<Task> = ArrayList()
         val db = readableDatabase
         val query = "select * from $TABLE_NAME"
-        val cursor = db.rawQuery(query,null)
-        if (cursor != null && cursor.count > 0){
-            cursor.moveToFirst()
+//        val cursor = db.rawQuery(query,null)
+//        if (cursor != null && cursor.count > 0){
+//            cursor.moveToFirst()
+//        }
+        val cursor: Cursor?
+        try {
+            cursor = db.rawQuery(query, null)
+        } catch (e: Exception) {
+            e.printStackTrace()
+            db.execSQL(query)
+            return ArrayList()
         }
-        do {
-            val id = cursor.getInt(cursor.getColumnIndex(ID))
-            val price = cursor.getInt(cursor.getColumnIndex(PRICE))
-            val itemname = cursor.getString(cursor.getColumnIndex(ITEM_NAME))
-            val desc = cursor.getString(cursor.getColumnIndex(DESC))
+        if (cursor.moveToFirst()) {
+            do {
+                val id = cursor.getInt(cursor.getColumnIndex(ID))
+                val price = cursor.getInt(cursor.getColumnIndex(PRICE))
+                val itemname = cursor.getString(cursor.getColumnIndex(ITEM_NAME))
+                val desc = cursor.getString(cursor.getColumnIndex(DESC))
 
-            val task = Task()
-            task.id = id
-            task.price = price
-            task.itemname = itemname
-            task.desc= desc
+                val task = Task()
+                task.id = id
+                task.price = price
+                task.itemname = itemname
+                task.desc = desc
 
-            taskList.add(task)
-        } while (cursor.moveToNext())
+                taskList.add(task)
+            } while (cursor.moveToNext())
+        }
         return taskList
     }
-
     override fun onUpgrade(db: SQLiteDatabase?, oldVersion: Int, newVersion: Int) {
 
     }
