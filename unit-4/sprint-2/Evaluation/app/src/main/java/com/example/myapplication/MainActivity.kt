@@ -15,7 +15,7 @@ class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
-        initRecycler()
+        initRecyclerView()
         btnSave.setOnClickListener {
             dataBaseHandler?.insertItem(etItemName.text.toString(),
                 etPrice.text.toString().toInt(),
@@ -27,7 +27,7 @@ class MainActivity : AppCompatActivity() {
             adaptor.notifyDataSetChanged()
         }
     }
-    fun initRecycler(){
+    fun initRecyclerView(){
         val LayoutManager = LinearLayoutManager(this)
         adaptor = ItemAdapter(addModel, tasksList)
         recyclerView.adapter = adaptor
