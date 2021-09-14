@@ -10,24 +10,23 @@
        android:layout_width="match_parent"
        android:layout_height="wrap_content">
        <EditText
-           android:id="@+id/ettoSearch"
+           android:id="@+id/etSearch"
            android:layout_width="wrap_content"
-           android:layout_marginLeft="10dp"
+           android:layout_marginStart="10dp"
            android:layout_weight="3"
            android:hint="Enter the title"
            android:layout_height="wrap_content" />
        <Button
+           android:id="@+id/btnSearch"
            android:layout_width="wrap_content"
            android:layout_height="wrap_content"
            android:layout_weight="0.5"
            android:layout_marginStart="10dp"
-           android:id="@+id/btntoSearch"
            android:text="Search" />
    </LinearLayout>
     <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerView"
         android:layout_width="match_parent"
-        android:id="@+id/RecyclerViewSearch"
-        android:layout_below="@id/ettoSearch"
         android:layout_margin="10dp"
         android:layout_height="wrap_content" />
 </LinearLayout>
