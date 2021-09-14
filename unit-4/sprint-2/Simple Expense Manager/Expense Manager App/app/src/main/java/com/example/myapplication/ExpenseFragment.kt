@@ -9,7 +9,7 @@ import android.view.View
 import android.view.ViewGroup
 import kotlinx.android.synthetic.main.fragment_expense.*
 
-class ExpenseFragment : Fragment(), onItemClickListener{
+class ExpenseFragment : Fragment(), onItemClick{
     private lateinit var dataAdapter: DataAdapter
     private var mutableList = mutableListOf<DataModel>()
     private var dbHandler : DatabaseHandler? = null

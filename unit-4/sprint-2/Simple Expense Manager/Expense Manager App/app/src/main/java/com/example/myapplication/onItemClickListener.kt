@@ -1,6 +1,6 @@
 package com.example.myapplication
 
-interface onItemClickListener {
+interface onItemClick {
     fun onEditClicked(dataModel: DataModel)
     fun onDeleteClicked(dataModel: DataModel)
 }

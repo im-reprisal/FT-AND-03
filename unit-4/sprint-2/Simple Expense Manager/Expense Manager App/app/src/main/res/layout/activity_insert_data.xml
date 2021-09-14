@@ -28,19 +28,19 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:entries="@array/arr"
-        android:layout_margin="10dp"/>
+        android:layout_margin="12dp"/>
     <EditText
         android:id="@+id/etInputAmt"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_margin="10dp"
+        android:layout_margin="12dp"
         android:hint="Enter Amount"
         android:inputType="number" />
     <EditText
         android:id="@+id/etInputDesc"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_margin="10dp"
+        android:layout_margin="12dp"
         android:hint="Enter Description"
         android:inputType="textMultiLine" />
     <Button

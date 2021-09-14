@@ -10,8 +10,6 @@ import kotlinx.android.synthetic.main.fragment_balance.*
 
 class BalanceFragment : Fragment() {
     lateinit var dbHandler : DatabaseHandler
-    var mutableList = mutableListOf<DataModel>()
-
     override fun onAttach(context: Context) {
         super.onAttach(context)
         dbHandler = DatabaseHandler(context)

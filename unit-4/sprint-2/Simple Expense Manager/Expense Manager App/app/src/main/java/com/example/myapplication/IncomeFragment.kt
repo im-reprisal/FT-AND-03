@@ -11,7 +11,7 @@ import android.widget.Toast
 import kotlinx.android.synthetic.main.fragment_income.*
 import java.lang.Exception
 
-class IncomeFragment : Fragment(), onItemClickListener {
+class IncomeFragment : Fragment(), onItemClick {
     private lateinit var dataAdapter: DataAdapter
     private var mutableList = mutableListOf<DataModel>()
     private var dbHandler : DatabaseHandler? = null

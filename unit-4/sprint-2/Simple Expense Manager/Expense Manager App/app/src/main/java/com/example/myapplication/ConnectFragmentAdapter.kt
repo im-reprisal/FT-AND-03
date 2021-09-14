@@ -8,16 +8,12 @@ class ConnectFragmentAdapter(fragmentManager: FragmentManager) :
     FragmentStatePagerAdapter(fragmentManager, BEHAVIOR_RESUME_ONLY_CURRENT_FRAGMENT) {
         var fragmentList : ArrayList<Fragment> = ArrayList()
         var fragmentTitle : ArrayList<String> = ArrayList()
-
-
         override fun getCount(): Int {
             return fragmentList.size;
         }
-
         override fun getPageTitle(position: Int): CharSequence {
             return fragmentTitle[position]
         }
-
         override fun getItem(position: Int): Fragment {
             return fragmentList[position]
         }
