@@ -14,36 +14,32 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:textStyle="bold"
-        android:text="Overall Balance"
-        android:layout_marginBottom="10dp"
-        android:textSize="19sp"
-        />
+        android:textSize="20sp"
+        android:textColor="@color/black"
+        android:layout_marginStart="10dp"
+        android:text="Overall Balance"/>
     <TextView
         android:id="@+id/tvIncome"
-        android:layout_marginStart="15dp"
-        android:layout_marginVertical="5dp"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Income"
-        android:textSize="16sp"
-        />
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="6dp"
+        android:textSize="18sp"
+        android:text="Income"/>
     <TextView
         android:id="@+id/tvExpense"
-        android:layout_marginStart="15dp"
-        android:layout_marginVertical="5dp"
+        android:layout_marginStart="16dp"
+        android:textSize="18sp"
+        android:layout_marginTop="6dp"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Expense"
-        android:textSize="16sp"
-        />
+        android:text="Expense"/>
     <TextView
         android:id="@+id/tvTotal"
-        android:layout_marginStart="15dp"
-        android:layout_marginVertical="5dp"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Total"
-        android:textSize="16sp"
-        />
-
+        android:layout_marginTop="6dp"
+        android:layout_marginStart="16dp"
+        android:textSize="18sp"
+        android:text="Total"/>
 </LinearLayout>
