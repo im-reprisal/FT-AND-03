@@ -6,43 +6,19 @@
     android:orientation="vertical"
     android:layout_height="match_parent"
     tools:context=".MainActivity">
-    <EditText
-        android:id="@+id/etItemName"
+    <fragment
+        android:id="@+id/ItemFragment"
+        android:name="com.example.myapplication.AddItemFragment"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    </fragment>
+    <fragment
+        android:id="@+id/SearchFragment"
+        android:name="com.example.myapplication.SearchItemFragment"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginStart="15dp"
-        android:layout_marginTop="15dp"
-        android:layout_marginEnd="15dp"
-        android:hint="Enter Item Name"/>
-    <EditText
-        android:id="@+id/etPrice"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="15dp"
-        android:layout_marginEnd="15dp"
-        android:hint="Enter Price"/>
-    <EditText
-        android:id="@+id/etDesc"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="15dp"
-        android:layout_marginEnd="15dp"
-        android:hint="Enter Desc"/>
-    <Button
-        android:id="@+id/btnSave"
-        android:layout_width="wrap_content"
-        android:layout_gravity="center"
-        android:layout_height="wrap_content"
-        android:text="Save"/>
-    <Button
-        android:id="@+id/btnGetItem"
-        android:layout_width="wrap_content"
-        android:layout_gravity="center"
-        android:layout_height="wrap_content"
-        android:text="Get Item"/>
- <androidx.recyclerview.widget.RecyclerView
-     android:id="@+id/recyclerView"
-     android:layout_width="match_parent"
-     android:layout_height="match_parent"
-     android:layout_margin="10dp"/>
+        android:layout_below="@id/ItemFragment"
+        android:layout_marginTop="10dp">
+
+    </fragment>
 </LinearLayout>
