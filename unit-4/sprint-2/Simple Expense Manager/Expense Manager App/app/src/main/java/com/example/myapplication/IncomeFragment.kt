@@ -41,23 +41,13 @@ class IncomeFragment : Fragment(), onItemClick {
         setRecyclerview()
     }
     private fun setRecyclerview() {
-<<<<<<< HEAD
-=======
-
->>>>>>> origin/main
         dataAdapter = DataAdapter(context as Activity,mutableList,this)
         recyclerview_income.adapter = dataAdapter
     }
     private fun updateUI(){
-<<<<<<< HEAD
         val  newData = dbHandler?.getIncomeData()
         mutableList.clear()
         newData?.let { mutableList.addAll(it) }
-=======
-        val  latestData = dbHandler?.getIncomeData()
-        mutableList.clear()
-        latestData?.let { mutableList.addAll(it) }
->>>>>>> origin/main
         dataAdapter.notifyDataSetChanged()
     }
 
