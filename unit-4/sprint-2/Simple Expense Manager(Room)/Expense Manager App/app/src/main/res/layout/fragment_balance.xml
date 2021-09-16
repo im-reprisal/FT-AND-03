@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_marginTop="?attr/actionBarSize"
+    android:layout_marginBottom="?actionBarSize"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginStart="14dp"
+    android:layout_marginEnd="14dp"
+    android:orientation="vertical"
+    tools:context=".ExpenseFragment">
+    <TextView
+        android:id="@+id/tvOverall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textStyle="bold"
+        android:textSize="20sp"
+        android:textColor="@color/black"
+        android:layout_marginStart="10dp"
+        android:text="Overall Balance"/>
+    <TextView
+        android:id="@+id/tvIncome"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="6dp"
+        android:textSize="18sp"
+        android:text="Income"/>
+    <TextView
+        android:id="@+id/tvExpense"
+        android:layout_marginStart="16dp"
+        android:textSize="18sp"
+        android:layout_marginTop="6dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Expense"/>
+    <TextView
+        android:id="@+id/tvTotal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="6dp"
+        android:layout_marginStart="16dp"
+        android:textSize="18sp"
+        android:text="Total"/>
+</LinearLayout>
