@@ -4,27 +4,30 @@ import android.view.View
 import android.view.ViewGroup
 import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
-class ItemAdapter(val itemList: List<Task>, tasksList: MutableList<Task>): RecyclerView.Adapter<ItemAdapter.ItemViewHolder>() {
-    override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ItemViewHolder{
+class ItemAdapter(val itm: List<Task>, val taskList: MutableList<Task>) :
+    RecyclerView.Adapter<ItemHolder>() {
+    override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ItemHolder {
         val view = LayoutInflater.from(parent.context).inflate(R.layout.item_layout, parent, false)
-        return ItemViewHolder(view)
+        return ItemHolder(view)
     }
-    override fun onBindViewHolder(holder: ItemViewHolder, position: Int) {
-       val itm:Task = itemList[position]
-        holder.bindView(itm)
-    }
+    override fun onBindViewHolder(holder: ItemHolder, position: Int) {
 
-    override fun getItemCount(): Int {
-        return itemList.size
+        var itm: Task = taskList[position]
+        holder.tvProductName.text = itm.itemname
+        holder.tvPrice.text = itm.price.toString()
+        holder.tvDesc.text = itm.desc
     }
-    class ItemViewHolder(var view : View) : RecyclerView.ViewHolder(view){
-        private var itemName = view.findViewById<TextView>(R.id.tvItemName)
-        private var price = view.findViewById<TextView>(R.id.tvPrice)
-        private var desc = view.findViewById<TextView>(R.id.tvDesc)
-        fun bindView(itm:Task){
-            itemName.text = itm.itemname.toString()
-            price.text = itm.price.toString()
-            desc.text = itm.desc.toString()
-        }
+    override fun getItemCount(): Int {
+        return taskList.size
+    }
+}
+class ItemHolder(view: View) : RecyclerView.ViewHolder(view) {
+    var tvProductName: TextView
+    var tvPrice: TextView
+    var tvDesc:TextView
+    init {
+        tvProductName = view.findViewById(R.id.tvItemName)
+        tvPrice = view.findViewById(R.id.tvPrice)
+        tvDesc = view.findViewById(R.id.tvDesc)
     }
 }
