@@ -5,7 +5,7 @@ import androidx.room.*
 
 
 @Dao
-interface DataDAO {
+interface TaskDAO {
 
     @Insert(onConflict = OnConflictStrategy.REPLACE)
     fun addData(dataModel: TaskModel)
