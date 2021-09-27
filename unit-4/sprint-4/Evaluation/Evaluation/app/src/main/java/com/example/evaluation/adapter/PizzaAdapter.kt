@@ -1,15 +1,14 @@
 package com.example.evaluation.adapter
 
-import android.annotation.SuppressLint
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
 import com.example.evaluation.R
-import com.example.evaluation.local.MyEntity
+import com.example.evaluation.models.Crust
 import kotlinx.android.synthetic.main.pizza_item_layout.view.*
 
-class CartAdapter(var cartList: List<MyEntity>) : RecyclerView.Adapter<CartAdapter.PizzaViewHolder>() {
+class PizzaAdapter(var cartList: MutableList<Crust>) : RecyclerView.Adapter<PizzaAdapter.PizzaViewHolder>() {
 
     inner class PizzaViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView)
 
@@ -22,9 +21,7 @@ class CartAdapter(var cartList: List<MyEntity>) : RecyclerView.Adapter<CartAdapt
     override fun onBindViewHolder(holder: PizzaViewHolder, position: Int) {
         val currentCartList = cartList[position]
         holder.itemView.apply {
-            tvName.text=currentCartList.name
-            tvPrice.text= currentCartList.price.toString()
-            tvDescription.text=currentCartList.desc
+
         }
     }
     override fun getItemCount() = cartList.size
