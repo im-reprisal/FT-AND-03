@@ -4,60 +4,7 @@
     <option name="autoReloadType" value="NONE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="1aeb6d13-133b-4447-b743-841f50f6aafa" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/../../Coding Preparation Series/Pizza/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Coding Preparation Series/Pizza/.idea/.name" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Coding Preparation Series/Pizza/.idea/compiler.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Coding Preparation Series/Pizza/.idea/gradle.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Coding Preparation Series/Pizza/.idea/misc.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Coding Preparation Series/Pizza/.idea/vcs.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Coding Preparation Series/Pizza/app/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Coding Preparation Series/Pizza/app/build.gradle" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Coding Preparation Series/Pizza/app/proguard-rules.pro" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Coding Preparation Series/Pizza/app/src/androidTest/java/com/example/myapplication/ExampleInstrumentedTest.kt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Coding Preparation Series/Pizza/app/src/main/AndroidManifest.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Coding Preparation Series/Pizza/app/src/main/java/com/example/myapplication/CartActivity.kt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Coding Preparation Series/Pizza/app/src/main/java/com/example/myapplication/Crust.kt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Coding Preparation Series/Pizza/app/src/main/java/com/example/myapplication/ItemListener.kt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Coding Preparation Series/Pizza/app/src/main/java/com/example/myapplication/MainActivity.kt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Coding Preparation Series/Pizza/app/src/main/java/com/example/myapplication/PizzaAdapter.kt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Coding Preparation Series/Pizza/app/src/main/java/com/example/myapplication/ResponseModel.kt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Coding Preparation Series/Pizza/app/src/main/java/com/example/myapplication/Size.kt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Coding Preparation Series/Pizza/app/src/main/res/drawable-v24/ic_launcher_foreground.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Coding Preparation Series/Pizza/app/src/main/res/drawable-v24/pizza_img.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Coding Preparation Series/Pizza/app/src/main/res/drawable-v24/shopping_cart.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Coding Preparation Series/Pizza/app/src/main/res/drawable/ic_forward.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Coding Preparation Series/Pizza/app/src/main/res/drawable/ic_launcher_background.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Coding Preparation Series/Pizza/app/src/main/res/layout/activity_cart.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Coding Preparation Series/Pizza/app/src/main/res/layout/activity_main.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Coding Preparation Series/Pizza/app/src/main/res/layout/cart_item_layout.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Coding Preparation Series/Pizza/app/src/main/res/layout/pizza_item_layout.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Coding Preparation Series/Pizza/app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Coding Preparation Series/Pizza/app/src/main/res/mipmap-anydpi-v26/ic_launcher_round.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Coding Preparation Series/Pizza/app/src/main/res/mipmap-hdpi/ic_launcher.webp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Coding Preparation Series/Pizza/app/src/main/res/mipmap-hdpi/ic_launcher_round.webp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Coding Preparation Series/Pizza/app/src/main/res/mipmap-mdpi/ic_launcher.webp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Coding Preparation Series/Pizza/app/src/main/res/mipmap-mdpi/ic_launcher_round.webp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Coding Preparation Series/Pizza/app/src/main/res/mipmap-xhdpi/ic_launcher.webp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Coding Preparation Series/Pizza/app/src/main/res/mipmap-xhdpi/ic_launcher_round.webp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Coding Preparation Series/Pizza/app/src/main/res/mipmap-xxhdpi/ic_launcher.webp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Coding Preparation Series/Pizza/app/src/main/res/mipmap-xxhdpi/ic_launcher_round.webp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Coding Preparation Series/Pizza/app/src/main/res/mipmap-xxxhdpi/ic_launcher.webp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Coding Preparation Series/Pizza/app/src/main/res/mipmap-xxxhdpi/ic_launcher_round.webp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Coding Preparation Series/Pizza/app/src/main/res/values-night/themes.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Coding Preparation Series/Pizza/app/src/main/res/values/colors.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Coding Preparation Series/Pizza/app/src/main/res/values/strings.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Coding Preparation Series/Pizza/app/src/main/res/values/themes.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Coding Preparation Series/Pizza/app/src/test/java/com/example/myapplication/ExampleUnitTest.kt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Coding Preparation Series/Pizza/build.gradle" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Coding Preparation Series/Pizza/gradle.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Coding Preparation Series/Pizza/gradle/wrapper/gradle-wrapper.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Coding Preparation Series/Pizza/gradle/wrapper/gradle-wrapper.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Coding Preparation Series/Pizza/gradlew" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Coding Preparation Series/Pizza/gradlew.bat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Coding Preparation Series/Pizza/settings.gradle" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../MVVM Test/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../MVVM Test/.idea/gradle.xml" afterDir="false" />
-    </list>
+    <list default="true" id="1aeb6d13-133b-4447-b743-841f50f6aafa" name="Default Changelist" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -103,5 +50,6 @@
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
 </project>
