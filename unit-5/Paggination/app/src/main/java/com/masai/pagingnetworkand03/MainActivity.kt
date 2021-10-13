@@ -4,21 +4,31 @@ import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
 import androidx.lifecycle.ViewModelProvider
 import androidx.recyclerview.widget.LinearLayoutManager
-import com.masai.pagingnetworkand03.model.CharacterDTO
 import com.masai.pagingnetworkand03.ui.CharacterAdapter
 import com.masai.pagingnetworkand03.ui.CharacterViewModel
 import kotlinx.android.synthetic.main.activity_main.*
+import kotlinx.coroutines.CoroutineScope
+import kotlinx.coroutines.Dispatchers.Main
+import kotlinx.coroutines.launch
 
 class MainActivity : AppCompatActivity() {
     private lateinit var characterViewModel: CharacterViewModel
     private lateinit var characterAdapter: CharacterAdapter
-    private var characterList = ArrayList<CharacterDTO>()
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
         characterViewModel = ViewModelProvider(this).get(CharacterViewModel::class.java)
         setAdapter()
+        characterViewModel.searchCharacters().observe(
+            this,{
+                it?.let {
+                    CoroutineScope(Main).launch {
+                        characterAdapter.submitData(it)
+                    }
+                }
+            }
+        )
 
     }
 
@@ -27,7 +37,7 @@ class MainActivity : AppCompatActivity() {
         val linearLayoutManager = LinearLayoutManager(this)
         recyclerview.apply {
             layoutManager = linearLayoutManager
-//            this.adapter = characterAdapter
+            this.adapter = characterAdapter
         }
     }
 }
