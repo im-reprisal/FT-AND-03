@@ -2,7 +2,8 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/.idea/modules/Paggination.iml" filepath="$PROJECT_DIR$/.idea/modules/Paggination.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/PagingNetworkAND03.iml" filepath="$PROJECT_DIR$/.idea/modules/PagingNetworkAND03.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/PagingNetworkAND03.app.iml" filepath="$PROJECT_DIR$/.idea/modules/app/PagingNetworkAND03.app.iml" />
     </modules>
   </component>
 </project>
