@@ -7,7 +7,5 @@ class CharacterViewModel : ViewModel() {
 
     private val repository = CharacterRepository()
 
-    fun searchCharacters() =
-        repository.getPagesList()
-
+    fun searchCharacters() = repository.getPagesList()
 }

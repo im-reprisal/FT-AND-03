@@ -14,5 +14,4 @@ class CharacterRepository {
             ),
             pagingSourceFactory = {CharacterPagingSource()}
         ).liveData
-
 }
