@@ -14,16 +14,13 @@
     <option name="autoReloadType" value="NONE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d00d7312-03d0-495e-860d-940445587e60" name="Default Changelist" comment="c">
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/masai/pagingnetworkand03/ui/CharacterRepository.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/masai/pagingnetworkand03/ui/CharacterRepository.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/masai/pagingnetworkand03/ui/CharacterViewModel.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/masai/pagingnetworkand03/ui/CharacterViewModel.kt" afterDir="false" />
-    </list>
+    <list default="true" id="d00d7312-03d0-495e-860d-940445587e60" name="Default Changelist" comment="c" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="ExecutionTargetManager" SELECTED_TARGET="device_and_snapshot_combo_box_target[58H3Y18831039738]" />
+  <component name="ExecutionTargetManager" SELECTED_TARGET="device_and_snapshot_combo_box_target[]" />
   <component name="ExternalProjectsData">
     <projectState path="$PROJECT_DIR$">
       <ProjectState />
@@ -49,7 +46,7 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="dart.analysis.tool.window.visible" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../../Test" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../data binding/Test" />
     <property name="settings.editor.selected.configurable" value="AndroidSdkUpdater" />
     <property name="show.migrate.to.gradle.popup" value="false" />
   </component>
