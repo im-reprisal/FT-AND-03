@@ -1,4 +1,7 @@
 package com.masai.sprint_2.ui.viewmodel
 
-class MainViewModel {
+import androidx.lifecycle.ViewModel
+
+class MainViewModel:ViewModel() {
+
 }

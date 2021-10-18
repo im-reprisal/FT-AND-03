@@ -9,7 +9,11 @@ import kotlinx.android.synthetic.main.item_layout.view.*
 class MainViewHolder(private val view: View):RecyclerView.ViewHolder(view) {
     fun setData(peopleResponseItem: PeopleResponseItem){
         view.apply {
-            Glide.with(this).load(peopleResponseItem.image.medium).into(person_image)
+            Glide.with(this).load(peopleResponseItem.image.medium).into(iv_person_image)
+            tv_person_name.text = peopleResponseItem.name
+            tv_country_name.text = peopleResponseItem.country.toString()
+            tv_birth_date.text = peopleResponseItem.birthday
+            tv_death_date.text = peopleResponseItem.deathday
         }
     }
 }
