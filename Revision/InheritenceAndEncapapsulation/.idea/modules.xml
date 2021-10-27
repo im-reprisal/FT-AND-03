@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/CommercialUser/CommercialUser.iml" filepath="$PROJECT_DIR$/CommercialUser/CommercialUser.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/InheritenceAndEncapapsulation.iml" filepath="$PROJECT_DIR$/.idea/InheritenceAndEncapapsulation.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Restaurent/Restaurent.iml" filepath="$PROJECT_DIR$/Restaurent/Restaurent.iml" />
+      <module fileurl="file://$PROJECT_DIR$/StudentDetails/StudentDetails.iml" filepath="$PROJECT_DIR$/StudentDetails/StudentDetails.iml" />
+      <module fileurl="file://$PROJECT_DIR$/StudentInfo/StudentInfo.iml" filepath="$PROJECT_DIR$/StudentInfo/StudentInfo.iml" />
+    </modules>
+  </component>
+</project>
