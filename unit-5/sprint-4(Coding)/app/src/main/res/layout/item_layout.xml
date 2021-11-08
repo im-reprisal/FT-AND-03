@@ -7,6 +7,16 @@
     app:cardCornerRadius="15dp"
     android:elevation="10dp"
     android:layout_height="wrap_content">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:id="@+id/btn_Save"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="8dp"
+            android:layout_alignParentEnd="true"
+            android:src="@drawable/ic_save"/>
     <LinearLayout
         android:layout_width="match_parent"
         android:orientation="horizontal"
@@ -14,7 +24,7 @@
         <ImageView
             android:id="@+id/iv_article_image"
             android:layout_width="140dp"
-            android:layout_height="140dp"/>
+            android:layout_height="match_parent"/>
         <LinearLayout
             android:layout_width="match_parent"
             android:orientation="vertical"
@@ -49,4 +59,5 @@
                 android:text="Description"/>
         </LinearLayout>
     </LinearLayout>
+    </RelativeLayout>
 </androidx.cardview.widget.CardView>
