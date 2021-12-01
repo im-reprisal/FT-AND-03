@@ -4,6 +4,7 @@ import android.view.LayoutInflater
 import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
 import com.example.my.R
+import com.example.my.data.OnCardClicked
 import com.example.my.data.models.Article
 import com.example.my.ui.viewholder.MainViewHolder
 
