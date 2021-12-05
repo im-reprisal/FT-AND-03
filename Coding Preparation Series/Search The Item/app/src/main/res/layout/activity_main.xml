@@ -11,10 +11,10 @@
         android:orientation="vertical"
         tools:context=".MainActivity">
         <EditText
-            android:id="@+id/et_SearchCity"
+            android:id="@+id/et_Search"
             android:layout_width="match_parent"
             android:layout_height="60dp"
-            android:hint="Enter the city to Search"
+            android:hint="Enter to Search"
             android:paddingStart="20sp"
             android:layout_margin="20dp"
             tools:ignore="RtlSymmetry" />
