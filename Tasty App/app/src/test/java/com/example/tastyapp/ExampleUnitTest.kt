@@ -1,4 +1,4 @@
-package com.example.tastyapp
+package com.example.TastyApp
 
 import org.junit.Test
 

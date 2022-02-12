@@ -1,3 +1,10 @@
 <resources>
-    <string name="app_name">Tasty App</string>
+    <string name="app_name">TASTYCLONE App</string>
+
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="name">name</string>
+    <string name="pizza">Pizza</string>
+    <string name="TextView">Cinnamon Roll French Toast Roll-up</string>
+    <string name="chicken">chicken</string>
+
 </resources>
